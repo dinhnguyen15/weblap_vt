@@ -11,9 +11,16 @@
 
 :root {
    --primary: #c11b1b;
+   --color-title: #629861;
+   --color-text: #000000;
+   --color-menu: #e44444;
+   --color-bg: #f1f1f1;
+   --color-text-2: #696969;
 }
 
 * {
+   margin: 0;
+   padding: 0;
    box-sizing: border-box;
 }
 
