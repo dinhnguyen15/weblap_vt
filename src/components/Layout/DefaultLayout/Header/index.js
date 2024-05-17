@@ -135,7 +135,7 @@ function Header() {
                      <button onClick={() => changeLanguage(language === 'en' ? 'vi' : 'en')}>
                         {language === 'en' ? 'VI' : 'EN'}
                         <img
-                           src={language === 'en' ? './images/vietnam-flag.png' : './images/uk-flag.png'}
+                           src={language === 'en' ? '/images/vietnam-flag.png' : '/images/uk-flag.png'}
                            alt={language === 'en' ? 'Vietnamese' : 'English'}
                            className={cx('flagIcon')}
                         />

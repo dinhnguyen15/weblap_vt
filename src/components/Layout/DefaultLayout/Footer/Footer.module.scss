@@ -1,0 +1,25 @@
+.footer {
+   background-color: var(--primary);
+   font-family: Roboto;
+   font-size: 18px;
+   color: #ffffff;
+   padding: 30px 0;
+}
+
+.footer-tl {
+   font-family: Roboto-Bold;
+}
+
+.footer-content {
+   padding: 10px 30px;
+}
+
+.container {
+   margin-left: 10rem;
+}
+
+@media (max-width: 650px) {
+   .container {
+      margin-left: 3rem;
+   }
+}
