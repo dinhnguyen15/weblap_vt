@@ -20,6 +20,7 @@
    --color-menu: #e44444;
    --color-bg: #f1f1f1;
    --color-text-2: #696969;
+   --color-text-3: #343434;
 }
 
 * {
@@ -37,4 +38,33 @@ body {
    font-size: 1.6rem;
    line-height: 1.5;
    text-rendering: optimizeSpeed;
+}
+
+.page-head {
+   background-color: var(--primary);
+   padding: 25px 0px;
+}
+
+.page-tl {
+   font-family: utm;
+   font-weight: 400;
+   font-size: 50px;
+   color: #ffffff;
+   padding: 10px 50px;
+}
+
+.page-des {
+   font-family: Roboto;
+   color: #ffffff;
+   font-size: 18px;
+   padding: 5px 50px 10px;
+}
+
+@media (min-width: 992px) {
+   .page-tl {
+      padding: 10px 160px;
+   }
+   .page-des {
+      padding: 5px 160px 10px;
+   }
 }

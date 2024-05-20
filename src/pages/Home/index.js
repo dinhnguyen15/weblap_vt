@@ -1,9 +1,45 @@
 import styles from './Home.module.scss';
 import classNames from 'classnames/bind';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Slider from 'react-slick';
 
 const cx = classNames.bind(styles);
 
+function CustomArrow(props) {
+   return null; // Ẩn mũi tên điều hướng trái phải
+}
+
 function Home() {
+   const settings = {
+      dots: true, // Hiển thị chấm tròn chỉ định slide hiện tại
+      infinite: true, // Vòng lặp vô hạn
+      speed: 500, // Tốc độ chuyển slide (ms)
+      slidesToShow: 3, // Số lượng slide hiển thị cùng lúc
+      slidesToScroll: 1, // Số lượng slide cuộn khi chuyển
+      autoplay: true, // Tự động chạy
+      autoplaySpeed: 3000, // Thời gian chờ giữa các slide (ms)
+      prevArrow: <CustomArrow />,
+      nextArrow: <CustomArrow />,
+      responsive: [
+         {
+            breakpoint: 1024,
+            settings: {
+               slidesToShow: 2,
+               slidesToScroll: 1,
+               infinite: true,
+               dots: true,
+            },
+         },
+         {
+            breakpoint: 650,
+            settings: {
+               slidesToShow: 1,
+               slidesToScroll: 1,
+            },
+         },
+      ],
+   };
    return (
       <div className={cx('wrapper')}>
          <div className={cx('background-home')}>
@@ -53,50 +89,52 @@ function Home() {
             <div className={cx('members-slide')}>
                <div className={cx('members-bg')}></div>
                <div className={cx('members-slide-list')}>
-                  <div className={cx('members-item')}>
-                     <div className={cx('members-box')}>
-                        <img
-                           className={cx('members-img')}
-                           src={'./images/members/htm.png'}
-                           alt={'PGS.TS Hoang Trong Minh'}
-                        />
-                        <h5 className={cx('members-name')}>PGS.TS Hoàng Trọng Minh</h5>
-                        <p className={cx('members-address')}>Học viện Công nghệ Bưu chính Viễn thông</p>
+                  <Slider {...settings}>
+                     <div className={cx('members-item')}>
+                        <div className={cx('members-box')}>
+                           <img
+                              className={cx('members-img')}
+                              src={'./images/members/htm.png'}
+                              alt={'PGS.TS Hoang Trong Minh'}
+                           />
+                           <h5 className={cx('members-name')}>PGS.TS Hoàng Trọng Minh</h5>
+                           <p className={cx('members-address')}>Học viện Công nghệ Bưu chính Viễn thông</p>
+                        </div>
                      </div>
-                  </div>
-                  <div className={cx('members-item')}>
-                     <div className={cx('members-box')}>
-                        <img
-                           className={cx('members-img')}
-                           src={'./images/members/nkq.png'}
-                           alt={'TS Nguyen Kim Quang'}
-                        />
-                        <h5 className={cx('members-name')}>TS Nguyễn Kim Quang</h5>
-                        <p className={cx('members-address')}>Học viện Công nghệ Bưu chính Viễn thông</p>
+                     <div className={cx('members-item')}>
+                        <div className={cx('members-box')}>
+                           <img
+                              className={cx('members-img')}
+                              src={'./images/members/nkq.png'}
+                              alt={'TS Nguyen Kim Quang'}
+                           />
+                           <h5 className={cx('members-name')}>TS Nguyễn Kim Quang</h5>
+                           <p className={cx('members-address')}>Học viện Công nghệ Bưu chính Viễn thông</p>
+                        </div>
                      </div>
-                  </div>
-                  <div className={cx('members-item')}>
-                     <div className={cx('members-box')}>
-                        <img
-                           className={cx('members-img')}
-                           src={'./images/members/htm.png'}
-                           alt={'PGS.TS Hoang Trong Minh'}
-                        />
-                        <h5 className={cx('members-name')}>PGS.TS Hoàng Trọng Minh</h5>
-                        <p className={cx('members-address')}>Học viện Công nghệ Bưu chính Viễn thông</p>
+                     <div className={cx('members-item')}>
+                        <div className={cx('members-box')}>
+                           <img
+                              className={cx('members-img')}
+                              src={'./images/members/htm.png'}
+                              alt={'PGS.TS Hoang Trong Minh'}
+                           />
+                           <h5 className={cx('members-name')}>PGS.TS Hoàng Trọng Minh</h5>
+                           <p className={cx('members-address')}>Học viện Công nghệ Bưu chính Viễn thông</p>
+                        </div>
                      </div>
-                  </div>
-                  <div className={cx('members-item')}>
-                     <div className={cx('members-box')}>
-                        <img
-                           className={cx('members-img')}
-                           src={'./images/members/nkq.png'}
-                           alt={'TS Nguyen Kim Quang'}
-                        />
-                        <h5 className={cx('members-name')}>TS Nguyễn Kim Quang</h5>
-                        <p className={cx('members-address')}>Học viện Công nghệ Bưu chính Viễn thông</p>
+                     <div className={cx('members-item')}>
+                        <div className={cx('members-box')}>
+                           <img
+                              className={cx('members-img')}
+                              src={'./images/members/nkq.png'}
+                              alt={'TS Nguyen Kim Quang'}
+                           />
+                           <h5 className={cx('members-name')}>TS Nguyễn Kim Quang</h5>
+                           <p className={cx('members-address')}>Học viện Công nghệ Bưu chính Viễn thông</p>
+                        </div>
                      </div>
-                  </div>
+                  </Slider>
                </div>
             </div>
          </div>

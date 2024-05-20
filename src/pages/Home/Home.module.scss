@@ -146,7 +146,9 @@
 .members-body {
    display: flex;
    flex-direction: row;
+   flex-wrap: wrap;
    justify-content: space-between;
+   gap: 30px;
 }
 
 .members-intro {
@@ -167,7 +169,7 @@
 }
 
 .members-slide {
-   width: 1100px;
+   max-width: 67%;
 }
 
 .members-bg {
@@ -179,12 +181,10 @@
 }
 
 .members-slide-list {
-   display: flex;
-   flex-direction: row;
-   gap: 10px;
    margin-top: -190px;
-   justify-content: end;
-   overflow: hidden;
+   margin-left: 25px;
+   position: relative;
+   z-index: 1;
 }
 
 .members-item {
