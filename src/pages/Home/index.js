@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import styles from './Home.module.scss';
 import classNames from 'classnames/bind';
 import 'slick-carousel/slick/slick.css';
@@ -11,6 +12,7 @@ function CustomArrow(props) {
 }
 
 function Home() {
+   const { t } = useTranslation();
    const settings = {
       dots: true, // Hiển thị chấm tròn chỉ định slide hiện tại
       infinite: true, // Vòng lặp vô hạn
@@ -52,14 +54,14 @@ function Home() {
                   <div className={cx('item-img2')}></div>
                </div>
                <div className={cx('about-info')}>
-                  <div className={cx('about-tl')}>About us</div>
-                  <div className={cx('about-content')}>Welcome to Intelligently Connected Network Lab.</div>
+                  <div className={cx('about-tl')}>{t('about_us')}</div>
+                  <div className={cx('about-content')}>{t('about_content')}</div>
                </div>
             </div>
 
             <div className={cx('news-body')}>
                <div className={cx('news-body-left')}>
-                  <div className={cx('about-tl')}>News</div>
+                  <div className={cx('about-tl')}>{t('news')}</div>
                   <ul className={cx('news-list')}>
                      <li className={cx('news-item')}>2023 VINIF PhD scholarships</li>
                      <li className={cx('news-item')}>IoT Challenge 2023</li>
@@ -80,7 +82,7 @@ function Home() {
 
          <div className={cx('members-body')}>
             <div className={cx('members-intro')}>
-               <div className={cx('about-tl')}>Members</div>
+               <div className={cx('about-tl')}>{t('members')}</div>
                <div className={cx('members-content')}>
                   Welcome to SSA laboratory. Our research delivers impact across the whole spectrum of communications,
                   algorithms, and signal processing, ...
@@ -141,7 +143,7 @@ function Home() {
 
          <div className={cx('container')}>
             <div className={cx('publications-body')}>
-               <div className={cx('about-tl')}>Publications</div>
+               <div className={cx('about-tl')}>{t('publications')}</div>
                <div className={cx('pub-item')}>
                   <div className={cx('pub-tl')}>
                      2024<br></br>

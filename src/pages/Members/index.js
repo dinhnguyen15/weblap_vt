@@ -1,13 +1,16 @@
+import { useTranslation } from 'react-i18next';
 import styles from './Members.module.scss';
 import classNames from 'classnames/bind';
 
 const cx = classNames.bind(styles);
 
 function Members() {
+   const { t } = useTranslation();
+
    return (
       <div className={cx('wrapper')}>
          <div className={cx('page-head')}>
-            <div className={cx('page-tl')}>Thành viên Lab</div>
+            <div className={cx('page-tl')}>{t('members')} Lab</div>
             <div className={cx('page-des')}></div>
          </div>
          <div className={cx('container')}>

@@ -3,8 +3,10 @@
    "news": "Tin tức",
    "introduction": "Giới thiệu",
    "members": "Thành viên",
-   "publications": "Công bố khoa học",
+   "publications": "Các công bố khoa học",
    "call_for_papers": "Thư mời hội thảo",
    "others": "Khác",
-   "contact_us": "Liên hệ"
+   "contact_us": "Liên hệ",
+   "about_us": "Về chúng tôi",
+   "about_content": "Lab Mạng kết nối thông minh"
 }

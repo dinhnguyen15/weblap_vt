@@ -1,13 +1,15 @@
+import { useTranslation } from 'react-i18next';
 import styles from './News.module.scss';
 import classNames from 'classnames/bind';
 
 const cx = classNames.bind(styles);
 
 function News() {
+   const { t } = useTranslation();
    return (
       <div className={cx('wrapper')}>
          <div className={cx('page-head')}>
-            <div className={cx('page-tl')}>Tin tức</div>
+            <div className={cx('page-tl')}>{t('news')}</div>
             <div className={cx('page-des')}>Tin tức sự kiện nghiên cứu</div>
          </div>
          <div className={cx('container')}>

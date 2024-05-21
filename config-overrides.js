@@ -1,6 +1,13 @@
-const { override, useBabelRc } = require("customize-cra");
+const { override, addWebpackAlias, addBabelPlugins } = require('customize-cra');
+const path = require('path');
 
 module.exports = override(
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    useBabelRc()
+   ...addBabelPlugins(
+      ['@babel/plugin-proposal-private-property-in-object', { loose: true }],
+      ['@babel/plugin-proposal-private-methods', { loose: true }],
+      ['@babel/plugin-proposal-class-properties', { loose: true }],
+   ),
+   addWebpackAlias({
+      '~': path.resolve(__dirname, 'src'),
+   }),
 );

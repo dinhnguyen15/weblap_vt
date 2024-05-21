@@ -1,13 +1,16 @@
+import { useTranslation } from 'react-i18next';
 import styles from './Publications.module.scss';
 import classNames from 'classnames/bind';
 
 const cx = classNames.bind(styles);
 
 function Publications() {
+   const { t } = useTranslation();
+
    return (
       <div className={cx('wrapper')}>
          <div className={cx('page-head')}>
-            <div className={cx('page-tl')}>Các công bố khoa học</div>
+            <div className={cx('page-tl')}>{t('publications')}</div>
             <div className={cx('page-des')}></div>
          </div>
          <div className={cx('container')}>
