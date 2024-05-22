@@ -16,7 +16,7 @@ function Publications() {
          <div className={cx('container')}>
             <div className={cx('body-Pub')}>
                <div className={cx('filter-research')}>
-                  <label className={cx('filter-tl')} for="status">
+                  <label className={cx('filter-tl')} htmlFor="status">
                      Bộ lọc:
                   </label>
                   <select className={cx('filter-name')} id="status" name="status">

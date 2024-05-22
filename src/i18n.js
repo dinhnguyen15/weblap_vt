@@ -14,8 +14,19 @@ i18n
          escapeValue: false, // not needed for react as it escapes by default
       },
       backend: {
-         loadPath: '/locales/{{lng}}.json', // Chỉnh lại đường dẫn tới tệp JSON
+         loadPath: '/web-lab-vt/locales/{{lng}}.json', // Chỉnh lại đường dẫn tới tệp JSON
       },
+      detection: {
+         order: ['localStorage', 'cookie', 'navigator', 'htmlTag', 'path', 'subdomain'],
+         caches: ['localStorage', 'cookie'],
+         lookupLocalStorage: 'i18nextLng',
+         lookupCookie: 'i18nextLng',
+         cookieMinutes: 10,
+         cookieDomain: 'myDomain',
+         htmlTag: document.documentElement,
+         checkWhitelist: true,
+      },
+      whitelist: ['en', 'vi'],
    });
 
 export default i18n;

@@ -14,7 +14,7 @@ function Header() {
    const location = useLocation();
    const linksRef = useRef([]);
    const { t, i18n } = useTranslation();
-   const [language, setLanguage] = useState(i18n.language);
+   const [language, setLanguage] = useState(i18n.language || 'en'); // Set default language to 'en'
 
    useEffect(() => {
       const updateLineStyle = () => {
@@ -64,7 +64,9 @@ function Header() {
       <header className={cx('wrapper')}>
          <div className={cx('inner')}>
             <nav className={cx('navbar')}>
-               <div className={cx('navbarLogo')}>Logo</div>
+               <NavLink to="/" className={cx('navbarLogo')}>
+                  <img src={'/web-lab-vt/images/logo-labvt.jpg'} alt={'logo'} />
+               </NavLink>
                <div className={cx('navbarLinks', { open: isOpen })}>
                   <div className={cx('line')} style={lineStyle}></div>
                   <NavLink
@@ -135,7 +137,11 @@ function Header() {
                      <button onClick={() => changeLanguage(language === 'en' ? 'vi' : 'en')}>
                         {language === 'en' ? 'VI' : 'EN'}
                         <img
-                           src={language === 'en' ? '/images/vietnam-flag.png' : '/images/uk-flag.png'}
+                           src={
+                              language === 'en'
+                                 ? '/web-lab-vt/images/vietnam-flag.png'
+                                 : '/web-lab-vt/images/uk-flag.png'
+                           }
                            alt={language === 'en' ? 'Vietnamese' : 'English'}
                            className={cx('flagIcon')}
                         />

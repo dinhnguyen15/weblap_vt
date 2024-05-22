@@ -15,12 +15,13 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 10px 20px;
+   padding: 5px 20px;
 }
 
-.navbarLogo {
-   font-size: 1.5rem;
-   font-weight: bold;
+.navbarLogo img {
+   height: 55px;
+   width: auto;
+   padding-top: 3px;
 }
 
 .navbarLinks {

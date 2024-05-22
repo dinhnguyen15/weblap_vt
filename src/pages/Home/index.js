@@ -96,7 +96,7 @@ function Home() {
                         <div className={cx('members-box')}>
                            <img
                               className={cx('members-img')}
-                              src={'./images/members/htm.png'}
+                              src={'/web-lab-vt/images/members/htm.png'}
                               alt={'PGS.TS Hoang Trong Minh'}
                            />
                            <h5 className={cx('members-name')}>PGS.TS Hoàng Trọng Minh</h5>
@@ -107,7 +107,7 @@ function Home() {
                         <div className={cx('members-box')}>
                            <img
                               className={cx('members-img')}
-                              src={'./images/members/nkq.png'}
+                              src={'/web-lab-vt/images/members/nkq.png'}
                               alt={'TS Nguyen Kim Quang'}
                            />
                            <h5 className={cx('members-name')}>TS Nguyễn Kim Quang</h5>
@@ -118,7 +118,7 @@ function Home() {
                         <div className={cx('members-box')}>
                            <img
                               className={cx('members-img')}
-                              src={'./images/members/htm.png'}
+                              src={'/web-lab-vt/images/members/htm.png'}
                               alt={'PGS.TS Hoang Trong Minh'}
                            />
                            <h5 className={cx('members-name')}>PGS.TS Hoàng Trọng Minh</h5>
@@ -129,7 +129,7 @@ function Home() {
                         <div className={cx('members-box')}>
                            <img
                               className={cx('members-img')}
-                              src={'./images/members/nkq.png'}
+                              src={'/web-lab-vt/images/members/nkq.png'}
                               alt={'TS Nguyen Kim Quang'}
                            />
                            <h5 className={cx('members-name')}>TS Nguyễn Kim Quang</h5>

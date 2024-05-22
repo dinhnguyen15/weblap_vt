@@ -40,6 +40,27 @@ body {
    text-rendering: optimizeSpeed;
 }
 
+/* width */
+::-webkit-scrollbar {
+   width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+   background: #b0b0b0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+   background: var(--color-menu);
+   border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+   background: var(--primary);
+}
+
 .page-head {
    background-color: var(--primary);
    padding: 25px 0px;
