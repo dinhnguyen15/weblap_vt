@@ -55,7 +55,9 @@ function Home() {
                </div>
                <div className={cx('about-info')}>
                   <div className={cx('about-tl')}>{t('about_us')}</div>
-                  <div className={cx('about-content')}>{t('about_content')}</div>
+                  <div className={cx('about-content')}>
+                     <div dangerouslySetInnerHTML={{ __html: t('about_content') }} />
+                  </div>
                </div>
             </div>
 
