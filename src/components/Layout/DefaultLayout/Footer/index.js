@@ -7,7 +7,7 @@ function Footer() {
    return (
       <div className={cx('wrapper', 'footer')}>
          <div className={cx('container')}>
-            <ul className={cx('footer-tl')}>Lab Mạng kết nối thông minh</ul>
+            <div className={cx('footer-tl')}>Lab Mạng kết nối thông minh</div>
             <ul className={cx('footer-content')}>
                <li>Địa chỉ phòng Lab: Phòng mạng viễn thông.</li>
                <li>Tổ chức phụ trách phòng Lab:</li>

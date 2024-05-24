@@ -81,11 +81,41 @@ body {
    padding: 5px 50px 10px;
 }
 
+a {
+   text-decoration: none;
+}
+
+.body-sp {
+   max-width: 1200px;
+   margin: 30px auto;
+   font-family: Roboto;
+   font-size: 18px;
+   color: var(--color-text);
+}
+
+p {
+   text-align: justify;
+}
+
+ol {
+   padding-left: 30px;
+}
+
+ul {
+   padding-left: 30px;
+}
+
 @media (min-width: 992px) {
    .page-tl {
       padding: 10px 160px;
    }
    .page-des {
       padding: 5px 160px 10px;
+   }
+}
+
+@media (max-width: 1230px) {
+   .body-sp {
+      width: 90vw;
    }
 }

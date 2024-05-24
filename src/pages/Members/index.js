@@ -8,7 +8,7 @@ const membersData = [
    {
       name: 'PGS.TS Hoàng Trọng Minh',
       position: 'Trưởng Lab',
-      description: 'Trưởng bộ môn ... Khoa Viễn thông 1 - Học viện Công nghệ Bưu chính Viễn thông',
+      description: 'Trưởng bộ môn ... Khoa Viễn thông 1 - Học viện Công nghệ Bưu chính Viễn thông ',
       email: 'minhht@ptit.edu.vn',
       hIndex: 21,
       citations: '> 1400 citations',
