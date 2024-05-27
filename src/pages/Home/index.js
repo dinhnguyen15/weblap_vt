@@ -4,6 +4,8 @@ import classNames from 'classnames/bind';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
@@ -13,6 +15,29 @@ function CustomArrow(props) {
 
 function Home() {
    const { t } = useTranslation();
+   const [news, setNews] = useState([]);
+   const [members, setMembers] = useState([]);
+
+   useEffect(() => {
+      const fetchNews = fetch('/web-lab-vt/newsData/news.json').then((response) => response.json());
+      const fetchMembers = fetch('/web-lab-vt/membersData/members.json').then((response) => response.json());
+
+      Promise.all([fetchNews, fetchMembers])
+         .then(([newsData, membersData]) => {
+            setNews(newsData);
+            setMembers(membersData);
+         })
+         .catch((error) => {
+            console.error('Error fetching data:', error);
+         });
+   }, []);
+
+   // Sắp xếp bài viết theo ID giảm dần và lấy ra 5 bài viết đầu tiên
+   const latestNews = news.sort((a, b) => b.id - a.id).slice(1, 5);
+
+   // hightlight 1 news
+   const hlNews = news.sort((a, b) => b.id - a.id).slice(0, 1);
+
    const settings = {
       dots: true, // Hiển thị chấm tròn chỉ định slide hiện tại
       infinite: true, // Vòng lặp vô hạn
@@ -65,19 +90,26 @@ function Home() {
                <div className={cx('news-body-left')}>
                   <div className={cx('about-tl')}>{t('news')}</div>
                   <ul className={cx('news-list')}>
-                     <li className={cx('news-item')}>2023 VINIF PhD scholarships</li>
-                     <li className={cx('news-item')}>IoT Challenge 2023</li>
+                     {latestNews.map((item) => (
+                        <Link to={`/news/${item.id}`}>
+                           <li key={item.id} className={cx('news-item')}>
+                              {item.title}
+                           </li>
+                        </Link>
+                     ))}
+                     {/* <li className={cx('news-item')}>IoT Challenge 2023</li> */}
                   </ul>
                </div>
                <div className={cx('news-body-right')}>
-                  <div className={cx('news-high')}>
-                     <div className={cx('news-img')}></div>
-                     <h5 className={cx('news-tl')}>2023 VINIF PhD scholarships</h5>
-                     <p className={cx('news-content')}>
-                        Congratulations to Vu Hoang Dieu, a key member of SSALab, for winning the VinIF PhD.
-                        scholarship. The announcement ceremony was held on Jan. 17, 2024.
-                     </p>
-                  </div>
+                  {hlNews.map((item) => (
+                     <Link to={`/news/${item.id}`}>
+                        <div className={cx('news-high')}>
+                           <div className={cx('news-img')}></div>
+                           <h5 className={cx('news-tl')}>{item.title}</h5>
+                           <p className={cx('news-content')}>{item.content}</p>
+                        </div>
+                     </Link>
+                  ))}
                </div>
             </div>
          </div>
@@ -94,50 +126,17 @@ function Home() {
                <div className={cx('members-bg')}></div>
                <div className={cx('members-slide-list')}>
                   <Slider {...settings}>
-                     <div className={cx('members-item')}>
-                        <div className={cx('members-box')}>
-                           <img
-                              className={cx('members-img')}
-                              src={'/web-lab-vt/images/members/htm.png'}
-                              alt={'PGS.TS Hoang Trong Minh'}
-                           />
-                           <h5 className={cx('members-name')}>PGS.TS Hoàng Trọng Minh</h5>
-                           <p className={cx('members-address')}>Học viện Công nghệ Bưu chính Viễn thông</p>
+                     {members.map((member) => (
+                        <div id={member.id} key={member.id} className={cx('members-item')}>
+                           <Link to={`/members#${member.id}`}>
+                              <div className={cx('members-box')}>
+                                 <img className={cx('members-img')} src={member.image} alt={member.name} />
+                                 <h5 className={cx('members-name')}>{member.name}</h5>
+                                 <p className={cx('members-address')}>{member.description}</p>
+                              </div>
+                           </Link>
                         </div>
-                     </div>
-                     <div className={cx('members-item')}>
-                        <div className={cx('members-box')}>
-                           <img
-                              className={cx('members-img')}
-                              src={'/web-lab-vt/images/members/nkq.png'}
-                              alt={'TS Nguyen Kim Quang'}
-                           />
-                           <h5 className={cx('members-name')}>TS Nguyễn Kim Quang</h5>
-                           <p className={cx('members-address')}>Học viện Công nghệ Bưu chính Viễn thông</p>
-                        </div>
-                     </div>
-                     <div className={cx('members-item')}>
-                        <div className={cx('members-box')}>
-                           <img
-                              className={cx('members-img')}
-                              src={'/web-lab-vt/images/members/htm.png'}
-                              alt={'PGS.TS Hoang Trong Minh'}
-                           />
-                           <h5 className={cx('members-name')}>PGS.TS Hoàng Trọng Minh</h5>
-                           <p className={cx('members-address')}>Học viện Công nghệ Bưu chính Viễn thông</p>
-                        </div>
-                     </div>
-                     <div className={cx('members-item')}>
-                        <div className={cx('members-box')}>
-                           <img
-                              className={cx('members-img')}
-                              src={'/web-lab-vt/images/members/nkq.png'}
-                              alt={'TS Nguyen Kim Quang'}
-                           />
-                           <h5 className={cx('members-name')}>TS Nguyễn Kim Quang</h5>
-                           <p className={cx('members-address')}>Học viện Công nghệ Bưu chính Viễn thông</p>
-                        </div>
-                     </div>
+                     ))}
                   </Slider>
                </div>
             </div>
