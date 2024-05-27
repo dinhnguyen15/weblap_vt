@@ -33,7 +33,7 @@ function Home() {
    }, []);
 
    // Sắp xếp bài viết theo ID giảm dần và lấy ra 5 bài viết đầu tiên
-   const latestNews = news.sort((a, b) => b.id - a.id).slice(1, 5);
+   const latestNews = news.sort((a, b) => b.id - a.id).slice(1, 6);
 
    // hightlight 1 news
    const hlNews = news.sort((a, b) => b.id - a.id).slice(0, 1);
