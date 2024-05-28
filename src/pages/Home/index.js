@@ -14,18 +14,15 @@ function CustomArrow(props) {
 }
 
 function Home() {
-   const { t } = useTranslation();
+   const { t, i18n } = useTranslation();
    const [news, setNews] = useState([]);
-   const [members, setMembers] = useState([]);
 
    useEffect(() => {
       const fetchNews = fetch('/web-lab-vt/newsData/news.json').then((response) => response.json());
-      const fetchMembers = fetch('/web-lab-vt/membersData/members.json').then((response) => response.json());
 
-      Promise.all([fetchNews, fetchMembers])
-         .then(([newsData, membersData]) => {
+      Promise.all([fetchNews])
+         .then(([newsData]) => {
             setNews(newsData);
-            setMembers(membersData);
          })
          .catch((error) => {
             console.error('Error fetching data:', error);
@@ -37,6 +34,34 @@ function Home() {
 
    // hightlight 1 news
    const hlNews = news.sort((a, b) => b.id - a.id).slice(0, 1);
+
+   const [members, setMembers] = useState([]);
+
+   useEffect(() => {
+      const loadMembersData = (language) => {
+         const url =
+            language === 'en' ? '/web-lab-vt/membersData/members-en.json' : '/web-lab-vt/membersData/members-vi.json';
+
+         fetch(url)
+            .then((response) => response.json())
+            .then((data) => setMembers(data))
+            .catch((error) => console.error('Error fetching members data:', error));
+      };
+
+      // Load data on initial render
+      loadMembersData(i18n.language);
+
+      // Reload data when language changes
+      const handleLanguageChange = (lng) => {
+         loadMembersData(lng);
+      };
+
+      i18n.on('languageChanged', handleLanguageChange);
+
+      return () => {
+         i18n.off('languageChanged', handleLanguageChange);
+      };
+   }, [i18n]);
 
    const settings = {
       dots: true, // Hiển thị chấm tròn chỉ định slide hiện tại
@@ -91,7 +116,7 @@ function Home() {
                   <div className={cx('about-tl')}>{t('news')}</div>
                   <ul className={cx('news-list')}>
                      {latestNews.map((item) => (
-                        <Link to={`/news/${item.id}`}>
+                        <Link to={`/news/${item.id}`} key={item.id}>
                            <li key={item.id} className={cx('news-item')}>
                               {item.title}
                            </li>
@@ -102,9 +127,9 @@ function Home() {
                </div>
                <div className={cx('news-body-right')}>
                   {hlNews.map((item) => (
-                     <Link to={`/news/${item.id}`}>
+                     <Link to={`/news/${item.id}`} key={item.id}>
                         <div className={cx('news-high')}>
-                           <div className={cx('news-img')}></div>
+                           <img className={cx('news-img')} src={item.image} alt={item.title} />
                            <h5 className={cx('news-tl')}>{item.title}</h5>
                            <p className={cx('news-content')}>{item.content}</p>
                         </div>

@@ -7,6 +7,17 @@
    "call_for_papers": "Call for papers",
    "others": "Others",
    "contact_us": "Contact us",
+   "news_des": "Research News and Events",
    "about_us": "About us",
-   "about_content": "&emsp;This laboratory strives to cultivate a collaborative research environment that fosters connections among researchers and co-labs. Our central mission is to explore cutting-edge advancements in intelligent connected networking, particularly addressing performance and security challenges in edge computing. <br>&emsp;We focus on developing performance-enhancing strategies by exploiting the potential of new wireless communication solutions and technologies alongside breakthroughs in edge intelligence. Otherwise, our research delves into the complexities of IoT authentication and integrity issues, anomaly detection, and the intrusion detection system design for resource-constrained devices at the network edge. The biggest challenge lies in orchestrating intelligent interactions among diverse devices within a decentralized framework. This focus on intelligent decision-making in a decentralized environment necessitates meticulous attention from our research group in the long term."
+   "about_content": "&emsp;This laboratory strives to cultivate a collaborative research environment that fosters connections among researchers and co-labs. Our central mission is to explore cutting-edge advancements in intelligent connected networking, particularly addressing performance and security challenges in edge computing. <br>&emsp;We focus on developing performance-enhancing strategies by exploiting the potential of new wireless communication solutions and technologies alongside breakthroughs in edge intelligence. Otherwise, our research delves into the complexities of IoT authentication and integrity issues, anomaly detection, and the intrusion detection system design for resource-constrained devices at the network edge. The biggest challenge lies in orchestrating intelligent interactions among diverse devices within a decentralized framework. This focus on intelligent decision-making in a decentralized environment necessitates meticulous attention from our research group in the long term.",
+   "lab_name": "Intelligently Connected Network Lab",
+   "lab_address": "Lab Address: Telecommunications Network Room",
+   "organization_lab": "Organization in charge of the Lab:",
+   "organization_ptit": "Organization: Posts and Telecommunications Institute of Technology",
+   "address": "Address: 122 Hoang Quoc Viet, Cau Giay, Hanoi",
+   "phone_fax": "Phone/Fax: 024-357446799 / 024-3779432",
+   "website": "Website: ptit.edu.vn",
+   "filter": "Filter:",
+   "filter_newest": "Newest Post",
+   "filter_oldest": "Oldest Post"
 }

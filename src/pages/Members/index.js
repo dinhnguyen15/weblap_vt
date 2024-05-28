@@ -7,15 +7,34 @@ import { useLocation } from 'react-router-dom';
 const cx = classNames.bind(styles);
 
 function Members() {
+   const { i18n, t } = useTranslation();
    const [members, setMembers] = useState([]);
 
    useEffect(() => {
-      fetch('/web-lab-vt/membersData/members.json')
-         .then((response) => response.json())
-         .then((data) => setMembers(data));
-   }, []);
+      const loadMembersData = (language) => {
+         const url =
+            language === 'en' ? '/web-lab-vt/membersData/members-en.json' : '/web-lab-vt/membersData/members-vi.json';
 
-   const { t } = useTranslation();
+         fetch(url)
+            .then((response) => response.json())
+            .then((data) => setMembers(data))
+            .catch((error) => console.error('Error fetching members data:', error));
+      };
+
+      // Load data on initial render
+      loadMembersData(i18n.language);
+
+      // Reload data when language changes
+      const handleLanguageChange = (lng) => {
+         loadMembersData(lng);
+      };
+
+      i18n.on('languageChanged', handleLanguageChange);
+
+      return () => {
+         i18n.off('languageChanged', handleLanguageChange);
+      };
+   }, [i18n]);
 
    const location = useLocation();
    const scrollRef = useRef(null);
@@ -63,16 +82,20 @@ function Members() {
                               </li>
                               <li className={cx('info-item')}>
                                  <div className={cx('line-info')}></div>
-                                 {member.researchAreas}
+                                 <p className={cx('item-research')}>{member.researchAreas}</p>
                               </li>
                            </ul>
                            <div className={cx('info-research')}>
                               {member.links.map((link, linkIndex) => (
                                  <div key={linkIndex}>
-                                    <a className={cx('re-btn')} href={link.url}>
+                                    <a
+                                       className={cx('re-btn')}
+                                       href={link.url}
+                                       target="_blank"
+                                       rel="noopener noreferrer"
+                                    >
                                        {link.label}
                                     </a>
-                                    {/* {link.label} */}
                                  </div>
                               ))}
                            </div>
@@ -80,113 +103,6 @@ function Members() {
                      </div>
                   ))}
                </div>
-               {/* <div className={cx('members-list')}>
-                  <div className={cx('members-item')}>
-                     <div className={cx('members-img')}>
-                        <img src={'/web-lab-vt/images/members/htm2.png'} alt={'PGS.TS Hoang Trong Minh'} />
-                     </div>
-                     <div className={cx('members-info')}>
-                        <div className={cx('members-name')}>PGS.TS Hoàng Trọng Minh</div>
-                        <div className={cx('members-position')}>Trưởng Lab</div>
-                        <div className={cx('members-des')}>
-                           Trưởng bộ môn ... Khoa Viễn thông 1 - Học viện Công nghệ Bưu chính Viễn thông
-                        </div>
-                        <ul className={cx('info-list')}>
-                           <li className={cx('info-item')}>
-                              <div className={cx('line-info')}></div>
-                              Email: minhht@ptit.edu.vn
-                           </li>
-                           <li className={cx('info-item')}>
-                              <div className={cx('line-info')}></div>
-                              H-index: 21, &#62; 1400 citations
-                           </li>
-                           <li className={cx('info-item')}>
-                              <div className={cx('line-info')}></div>
-                              ISI-Scopus papers: &#62;50
-                           </li>
-                           <li className={cx('info-item')}>
-                              <div className={cx('line-info')}></div>
-                              Lĩnh vực nghiên cứu:
-                           </li>
-                        </ul>
-                        <div className={cx('info-research')}>
-                           <div className={cx('re-btn')}>Google Scholar</div>
-                           <div className={cx('re-btn')}>Researchgate</div>
-                           <div className={cx('re-btn')}>Orcid</div>
-                        </div>
-                     </div>
-                  </div>
-                  <div className={cx('members-item')}>
-                     <div className={cx('members-img')}>
-                        <img src={'/web-lab-vt/images/members/ttd.png'} alt={'PGS.TS Tran Trung Duy'} />
-                     </div>
-                     <div className={cx('members-info')}>
-                        <div className={cx('members-name')}>PGS.TS Trần Trung Duy</div>
-                        <div className={cx('members-position')}>Phó trưởng Lab</div>
-                        <div className={cx('members-des')}>
-                           Phòng Đào tạo và Khoa học công nghệ - Học viện Công nghệ Bưu chính Viễn thông
-                        </div>
-                        <ul className={cx('info-list')}>
-                           <li className={cx('info-item')}>
-                              <div className={cx('line-info')}></div>
-                              Email: minhht@ptit.edu.vn
-                           </li>
-                           <li className={cx('info-item')}>
-                              <div className={cx('line-info')}></div>
-                              H-index: 21, &#62; 1400 citations
-                           </li>
-                           <li className={cx('info-item')}>
-                              <div className={cx('line-info')}></div>
-                              ISI-Scopus papers: &#62;50
-                           </li>
-                           <li className={cx('info-item')}>
-                              <div className={cx('line-info')}></div>
-                              Lĩnh vực nghiên cứu:
-                           </li>
-                        </ul>
-                        <div className={cx('info-research')}>
-                           <div className={cx('re-btn')}>Google Scholar</div>
-                           <div className={cx('re-btn')}>Researchgate</div>
-                           <div className={cx('re-btn')}>Orcid</div>
-                        </div>
-                     </div>
-                  </div>
-                  <div className={cx('members-item')}>
-                     <div className={cx('members-img')}>
-                        <img src={'/web-lab-vt/images/members/nvh.png'} alt={'TS Nguyen Viet Hung'} />
-                     </div>
-                     <div className={cx('members-info')}>
-                        <div className={cx('members-name')}>TS Nguyễn Việt Hưng</div>
-                        <div className={cx('members-position')}>Thành viên chính</div>
-                        <div className={cx('members-des')}>
-                           Trưởng bộ môn ... Khoa Viễn thông 1 - Học viện Công nghệ Bưu chính Viễn thông
-                        </div>
-                        <ul className={cx('info-list')}>
-                           <li className={cx('info-item')}>
-                              <div className={cx('line-info')}></div>
-                              Email: minhht@ptit.edu.vn
-                           </li>
-                           <li className={cx('info-item')}>
-                              <div className={cx('line-info')}></div>
-                              H-index: 21, &#62; 1400 citations
-                           </li>
-                           <li className={cx('info-item')}>
-                              <div className={cx('line-info')}></div>
-                              ISI-Scopus papers: &#62;50
-                           </li>
-                           <li className={cx('info-item')}>
-                              <div className={cx('line-info')}></div>
-                              Lĩnh vực nghiên cứu:
-                           </li>
-                        </ul>
-                        <div className={cx('info-research')}>
-                           <div className={cx('re-btn')}>Google Scholar</div>
-                           <div className={cx('re-btn')}>Researchgate</div>
-                           <div className={cx('re-btn')}>Orcid</div>
-                        </div>
-                     </div>
-                  </div>
-               </div> */}
             </div>
          </div>
       </div>

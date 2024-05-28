@@ -84,6 +84,10 @@
    background-color: var(--color-title);
 }
 
+.item-research {
+   max-width: 600px;
+}
+
 .info-research {
    display: flex;
    flex-direction: row;
@@ -115,5 +119,8 @@
 @media (max-width: 650px) {
    .members-info {
       width: 280px;
+   }
+   .item-research {
+      max-width: 200px;
    }
 }

@@ -1,0 +1,156 @@
+[
+   {
+      "id": 1,
+      "title": "Proactive link handover deploying coordinated transmission for indoor visible light communications (VLC) networks",
+      "author": "Cong-Nam Tran, Trong-Minh Hoang, Nam-Hoang Nguyen",
+      "date_time": "13/02/2024",
+      "link_pub": "https://www.degruyter.com/document/doi/10.1515/joc-2019-0282/html"
+   },
+   {
+      "id": 2,
+      "title": "Applying Heuristic Methods to the Offloading Problem in Edge Computing",
+      "author": "Trong-Minh Hoang, Thu-Trang Ngo Thi, Hong-Hue Nguyen Thi, Duc-Tan Tran, Nam-Hoang Nguyen",
+      "date_time": "2024",
+      "link_pub": "https://www.taylorfrancis.com/chapters/edit/10.1201/9781003306290-11/applying-heuristic-methods-offloading-problem-edge-computing-trong-minh-hoang-thu-trang-ngo-thi-hong-hue-nguyen-thi-duc-tan-tran-nam-hoang-nguyen"
+   },
+   {
+      "id": 3,
+      "title": "Delay Improvement in Hierarchical Multi-Access Edge Computing Networks",
+      "author": "Ngoc-Tan NGUYEN, Trung-Duc NGUYEN, Nam-Hoang NGUYEN, Trong-Minh HOANG",
+      "date_time": "2024",
+      "link_pub": "https://www.jstage.jst.go.jp/article/transfun/advpub/0/advpub_2023EAL2048/_article/-char/ja/"
+   },
+   {
+      "id": 4,
+      "title": "Coverage probability of energy harvesting enabled LoRa networks with stochastic geometry",
+      "author": "Thi-Tuyet-Hai Nguyen, Tan N Nguyen, Tran Trung Duy, Nguyen Hong Son, Tan Hanh, Minh Bui Vu, Lam-Thanh Tu",
+      "date_time": "02/4/2024",
+      "link_pub": "https://www.tandfonline.com/doi/full/10.1080/24751839.2023.2281144"
+   },
+   {
+      "id": 5,
+      "title": "Performance Evaluation Of Reconfigurable Intelligent Surface Aided Multi-Hop Relaying Schemes With Short Packet Communication",
+      "author": "Pham Minh Quang, Nguyen Trong Kien, Tran Trung Duy, Ngo Hoang An, Nguyen Tien Tung, Anh-Vu Le",
+      "date_time": "04/03/2024",
+      "link_pub": "http://advances.vsb.cz/index.php/AEEE/article/view/5583"
+   },
+   {
+      "id": 6,
+      "title": "A Low-Complexity Relaying Protocol for Cooperative Short-Packet NOMA-based Spectrum Sharing Systems",
+      "author": "Tien-Tung Nguyen, Thai-Hoc Vu, Lam-Thanh Tu, Tran Trung Duy, Quang-Sang Nguyen, Daniel Benevides da Costa",
+      "date_time": "01/01/2024",
+      "link_pub": "https://ieeexplore.ieee.org/abstract/document/10378855"
+   },
+   {
+      "id": 7,
+      "title": "Blockchain-Empowered Metaverse: Decentralized Crowdsourcing and Marketplace for Trading Machine Learning Data and Models",
+      "author": "Hung Duy Le, Vu Tuan Truong, Long Bao Le",
+      "date_time": "14/05/2024",
+      "link_pub": "https://ieeexplore.ieee.org/abstract/document/10530265"
+   },
+   {
+      "id": 8,
+      "title": "Machine-Learning-Assisted Transmission Power Control for LoRaWAN Considering Environments with High Signal-to-Noise Variation",
+      "author": "Mauricio González-Palacio, Diana Tobón-Vallejo, Lina M Sepúlveda-Cano, Mario Luna-delRisco, Christof Roehrig, Long Bao Le",
+      "date_time": "11/04/2024",
+      "link_pub": "https://ieeexplore.ieee.org/abstract/document/10497097"
+   },
+   {
+      "id": 9,
+      "title": "Electric vehicle charging design: The factored action based reinforcement learning approach",
+      "author": "Long Bao Le",
+      "date_time": "01/4/2024",
+      "link_pub": "https://www.sciencedirect.com/science/article/abs/pii/S030626192400120X"
+   },
+   {
+      "id": 10,
+      "title": "Trust-Free Blockchain Framework for AI-Generated Content Trading and Management in Metaverse",
+      "author": "Vu Tuan Truong, Hung Duy Le, Long Bao Le",
+      "date_time": "18/03/2024",
+      "link_pub": "https://ieeexplore.ieee.org/abstract/document/10466733"
+   },
+   {
+      "id": 11,
+      "title": "Delay and Overhead Efficient Transmission Scheduling for Federated Learning in UAV Swarms",
+      "author": "Duc NM Hoang, Vu Tuan Truong, Hung Duy Le, Long Bao Le",
+      "date_time": "22/02/2024",
+      "link_pub": "https://arxiv.org/abs/2405.00681"
+   },
+   {
+      "id": 12,
+      "title": "Security for the Metaverse: Blockchain and Machine Learning Techniques for Intrusion Detection",
+      "author": "Vu Tuan Truong, Long Bao Le",
+      "date_time": "09/01/2024",
+      "link_pub": "https://ieeexplore.ieee.org/abstract/document/10385065"
+   },
+   {
+      "id": 13,
+      "title": "VORTEX: Visual phishing detectiOns aRe Through EXplanations",
+      "author": "Fabien Charmet, Tomohiro Morikawa, Akira Tanaka, Takeshi Takahashi",
+      "date_time": "2024",
+      "link_pub": "https://dl.acm.org/doi/abs/10.1145/3654665"
+   },
+   {
+      "id": 14,
+      "title": "Privacy-preserving intelligent content-caching scheme in heterogeneous aerial access networks",
+      "author": "Arooj Masood, Nhu-Ngoc Dao, Sungrae Cho",
+      "date_time": "01/6/2024",
+      "link_pub": "https://www.sciencedirect.com/science/article/abs/pii/S0957417423033365"
+   },
+   {
+      "id": 15,
+      "title": "Delayed Dynamics Analysis of SEI2RS Malware Propagation Models in Cyber-Physical Systems",
+      "author": "D Nithya, V Madhusudanan, BSN Murthy, R Geetha, Nguyen Xuan Mung, Nhu-Ngoc Dao, Sungrae Cho",
+      "date_time": "08/05/2024",
+      "link_pub": "https://www.sciencedirect.com/science/article/abs/pii/S138912862400313X"
+   },
+   {
+      "id": 16,
+      "title": "A review on new technologies in 3GPP standards for 5G access and beyond",
+      "author": "Nhu-Ngoc Dao, Ngo Hoang Tu, Trong-Dai Hoang, Tri-Hai Nguyen, Luong Vuong Nguyen, Kyungchun Lee, Laihyuk Park, Woongsoo Na, Sungrae Cho",
+      "date_time": "27/03/2024",
+      "link_pub": "https://www.sciencedirect.com/science/article/abs/pii/S1389128624002020"
+   },
+   {
+      "id": 17,
+      "title": "Intelligent Heterogeneous Aerial Edge Computing for Advanced 5G Access",
+      "author": "Tri-Hai Nguyen, Thanh Phung Truong, Anh-Tien Tran, Nhu-Ngoc Dao, Laihyuk Park, Sungrae Cho",
+      "date_time": "29/02/2024",
+      "link_pub": "https://ieeexplore.ieee.org/abstract/document/10453988"
+   },
+   {
+      "id": 18,
+      "title": "Joint wireless resource allocation and bitrate adaptation for QoE improvement in IRS-aided RSMA-enabled IoMT streaming systems",
+      "author": "Nam-Phuong Tran, Thanh Phung Truong, Quang Tuan Do, Nhu-Ngoc Dao, Sungrae Cho",
+      "date_time": "27/04/2024",
+      "link_pub": "https://www.sciencedirect.com/science/article/pii/S2542660524000878"
+   },
+   {
+      "id": 19,
+      "title": "Enhancing Upscaled Image Resolution using Hybrid Generative Adversarial Network-Enabled Frameworks",
+      "author": "R Geetha, G Belshia Jebamalar, S Arumai Shiney, Nhu-Ngoc Dao, Hyeonjoon Moon, Sungrae Cho",
+      "date_time": "20/02/2024",
+      "link_pub": "https://ieeexplore.ieee.org/abstract/document/10440335"
+   },
+   {
+      "id": 20,
+      "title": "Intelligent Self-Optimization for Task Offloading in LEO-MEC-Assisted Energy-Harvesting-UAV Systems",
+      "author": "Demeke Shumeye Lakew, Anh-Tien Tran, Nhu-Ngoc Dao, Sungrae Cho",
+      "date_time": "13/01/2024",
+      "link_pub": "https://ieeexplore.ieee.org/abstract/document/10380438"
+   },
+   {
+      "id": 21,
+      "title": "MỘT GIẢI PHÁP TĂNG DUNG LƯỢNG HỆ THỐNG PHÂN PHỐI KHÓA LƯỢNG TỬ QUA HỆ THỐNG LAI GHÉP QUANG VÔ TUYẾN",
+      "author": "ANH-THU PHAM",
+      "date_time": "08/05/2024",
+      "link_pub": "https://jstic.ptit.edu.vn/jstic-ptit/index.php/jstic/article/view/1483"
+   },
+   {
+      "id": 22,
+      "title": "Robustness of exponential stability of a class of switched positive linear systems with time delays",
+      "author": "Nguyen Khoa Son, Le Van Ngoc",
+      "date_time": "10/03/2024",
+      "link_pub": "https://onlinelibrary.wiley.com/doi/abs/10.1002/rnc.7115"
+   }
+]

@@ -7,6 +7,17 @@
    "call_for_papers": "Thư mời hội thảo",
    "others": "Khác",
    "contact_us": "Liên hệ",
+   "news_des": "Tin tức sự kiện nghiên cứu",
    "about_us": "Về chúng tôi",
-   "about_content": "&emsp;Phòng thí nghiệm này nỗ lực tạo ra một môi trường nghiên cứu hợp tác, thúc đẩy kết nối giữa các nhà nghiên cứu và các phòng thí nghiệm đồng hành. Sứ mệnh chính của chúng tôi là khám phá những tiến bộ tiên tiến trong mạng kết nối thông minh, đặc biệt là giải quyết các thách thức về hiệu suất và bảo mật trong điện toán biên.<br>&emsp;Chúng tôi tập trung phát triển các chiến lược nâng cao hiệu suất bằng cách khai thác tiềm năng của các giải pháp và công nghệ truyền thông không dây mới cùng với những đột phá trong trí tuệ biên. Ngoài ra, nghiên cứu của chúng tôi đi sâu vào sự phức tạp của xác thực và tính toàn vẹn của IoT, phát hiện bất thường và thiết kế hệ thống phát hiện xâm nhập cho các thiết bị hạn chế tài nguyên ở biên mạng. Thách thức lớn nhất nằm ở việc tổ chức các tương tác thông minh giữa các thiết bị đa dạng trong một khung phân tán. Tập trung vào việc ra quyết định thông minh trong môi trường phi tập trung đòi hỏi sự chú ý tỉ mỉ từ nhóm nghiên cứu của chúng tôi trong dài hạn."
+   "about_content": "&emsp;Phòng thí nghiệm này nỗ lực tạo ra một môi trường nghiên cứu hợp tác, thúc đẩy kết nối giữa các nhà nghiên cứu và các phòng thí nghiệm đồng hành. Sứ mệnh chính của chúng tôi là khám phá những tiến bộ tiên tiến trong mạng kết nối thông minh, đặc biệt là giải quyết các thách thức về hiệu suất và bảo mật trong điện toán biên.<br>&emsp;Chúng tôi tập trung phát triển các chiến lược nâng cao hiệu suất bằng cách khai thác tiềm năng của các giải pháp và công nghệ truyền thông không dây mới cùng với những đột phá trong trí tuệ biên. Ngoài ra, nghiên cứu của chúng tôi đi sâu vào sự phức tạp của xác thực và tính toàn vẹn của IoT, phát hiện bất thường và thiết kế hệ thống phát hiện xâm nhập cho các thiết bị hạn chế tài nguyên ở biên mạng. Thách thức lớn nhất nằm ở việc tổ chức các tương tác thông minh giữa các thiết bị đa dạng trong một khung phân tán. Tập trung vào việc ra quyết định thông minh trong môi trường phi tập trung đòi hỏi sự chú ý tỉ mỉ từ nhóm nghiên cứu của chúng tôi trong dài hạn.",
+   "lab_name": "Lab Mạng kết nối thông minh",
+   "lab_address": "Địa chỉ phòng Lab: Phòng mạng viễn thông",
+   "organization_lab": "Tổ chức phụ trách phòng Lab:",
+   "organization_ptit": "Tổ chức: Học viện Công nghệ Bưu chính Viễn thông",
+   "address": "Địa chỉ: 122 Hoàng Quốc Việt, Cầu Giấy, Hà Nội",
+   "phone_fax": "Điện thoại/Fax: 024-357446799 / 024-3779432",
+   "website": "Website: ptit.edu.vn",
+   "filter": "Bộ lọc:",
+   "filter_newest": "Bài mới nhất",
+   "filter_oldest": "Bài cũ nhất"
 }

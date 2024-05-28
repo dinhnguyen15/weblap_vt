@@ -19,7 +19,7 @@ function News() {
       <div className={cx('wrapper')}>
          <div className={cx('page-head')}>
             <div className={cx('page-tl')}>{t('news')}</div>
-            <div className={cx('page-des')}>Tin tức sự kiện nghiên cứu</div>
+            <div className={cx('page-des')}>{t('news_des')}</div>
          </div>
          <div className={cx('container')}>
             <div className={cx('body-news')}>
@@ -31,7 +31,7 @@ function News() {
                   {news.map((item) => (
                      <div key={item.id} className={cx('news-item')}>
                         <Link to={`/news/${item.id}`}>
-                           <div className={cx('news-img')}></div>
+                           <img className={cx('news-img')} src={item.image} alt={item.title} />
                            <div className={cx('news-name')}>{item.title}</div>
                            <div className={cx('news-content')}>{item.content}</div>
                         </Link>
