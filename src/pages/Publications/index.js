@@ -8,12 +8,32 @@ const cx = classNames.bind(styles);
 function Publications() {
    const { t } = useTranslation();
    const [publications, setPublications] = useState([]);
+   const [filter, setFilter] = useState('1'); // 1: Newest, 2: Oldest
 
    useEffect(() => {
       fetch('/web-lab-vt/publicationsData/publications.json')
          .then((response) => response.json())
-         .then((data) => setPublications(data));
+         .then((data) => {
+            const parsedData = data.map((pub) => ({
+               ...pub,
+               originalDate: pub.date_time,
+               date_time: new Date(pub.date_time.split('/').reverse().join('-')),
+            }));
+            setPublications(parsedData);
+         });
    }, []);
+
+   const handleFilterChange = (e) => {
+      setFilter(e.target.value);
+   };
+
+   const sortedPublications = [...publications].sort((a, b) => {
+      if (filter === '1') {
+         return b.date_time - a.date_time; // Newest first
+      } else {
+         return a.date_time - b.date_time; // Oldest first
+      }
+   });
 
    return (
       <div className={cx('wrapper')}>
@@ -27,7 +47,13 @@ function Publications() {
                   <label className={cx('filter-tl')} htmlFor="status">
                      {t('filter')}
                   </label>
-                  <select className={cx('filter-name')} id="status" name="status">
+                  <select
+                     className={cx('filter-name')}
+                     id="status"
+                     name="status"
+                     value={filter}
+                     onChange={handleFilterChange}
+                  >
                      <option className={cx('filter-status')} value="1">
                         {t('filter_newest')}
                      </option>
@@ -37,7 +63,7 @@ function Publications() {
                   </select>
                </div>
                <div className={cx('research-list')}>
-                  {publications.map((pub) => (
+                  {sortedPublications.map((pub) => (
                      <a
                         href={pub.link_pub}
                         key={pub.id}
@@ -48,41 +74,12 @@ function Publications() {
                         <div className={cx('line-research')}></div>
                         <div className={cx('research-name')}>{pub.title}</div>
                         <div className={cx('research-des')}>{pub.author}</div>
-                        <div className={cx('research-date')}>{pub.date_time}</div>
+                        {/* Hiển thị như trong json */}
+                        <div className={cx('research-date')}>{pub.originalDate}</div>
+
+                        {/* <div className={cx('research-date')}>{pub.date_time.toLocaleDateString()}</div>Hiển thị định dạng tháng/ngày/năm */}
                      </a>
                   ))}
-                  {/* <div className={cx('research-item')}>
-                     <div className={cx('line-research')}></div>
-                     <div className={cx('research-name')}>Machine Learning for Mobile Communications</div>
-                     <div className={cx('research-des')}>
-                        Mirdula K, Chandrakumar T, Mohd Asif Shah, Duc-Tan Tran, NR Physical Layer
-                     </div>
-                     <div className={cx('research-date')}>Tháng 1 năm 2024</div>
-                  </div>
-                  <div className={cx('research-item')}>
-                     <div className={cx('line-research')}></div>
-                     <div className={cx('research-name')}>Machine Learning for Mobile Communications</div>
-                     <div className={cx('research-des')}>
-                        Mirdula K, Chandrakumar T, Mohd Asif Shah, Duc-Tan Tran, NR Physical Layer
-                     </div>
-                     <div className={cx('research-date')}>Tháng 1 năm 2024</div>
-                  </div>
-                  <div className={cx('research-item')}>
-                     <div className={cx('line-research')}></div>
-                     <div className={cx('research-name')}>Machine Learning for Mobile Communications</div>
-                     <div className={cx('research-des')}>
-                        Mirdula K, Chandrakumar T, Mohd Asif Shah, Duc-Tan Tran, NR Physical Layer
-                     </div>
-                     <div className={cx('research-date')}>Tháng 1 năm 2024</div>
-                  </div>
-                  <div className={cx('research-item')}>
-                     <div className={cx('line-research')}></div>
-                     <div className={cx('research-name')}>Machine Learning for Mobile Communications</div>
-                     <div className={cx('research-des')}>
-                        Mirdula K, Chandrakumar T, Mohd Asif Shah, Duc-Tan Tran, NR Physical Layer
-                     </div>
-                     <div className={cx('research-date')}>Tháng 1 năm 2024</div>
-                  </div> */}
                </div>
             </div>
          </div>

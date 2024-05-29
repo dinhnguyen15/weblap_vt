@@ -169,7 +169,10 @@
       "papers": "",
       "researchAreas": "Research Field: WSN, IoT, Security",
       "image": "/web-lab-vt/images/members/thl.jpg",
-      "links": [{ "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=50nLxUoAAAAJ&hl=en" }]
+      "links": [
+         { "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=50nLxUoAAAAJ&hl=en" },
+         { "label": "Orcid", "url": "https://orcid.org/0009-0008-2968-3905" }
+      ]
    },
    {
       "id": 14,

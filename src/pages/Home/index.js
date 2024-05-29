@@ -63,6 +63,23 @@ function Home() {
       };
    }, [i18n]);
 
+   const [publications, setPublications] = useState([]);
+
+   useEffect(() => {
+      fetch('/web-lab-vt/publicationsData/publications.json')
+         .then((response) => response.json())
+         .then((data) => {
+            const parsedData = data.map((pub) => ({
+               ...pub,
+               originalDate: pub.date_time,
+               date_time: new Date(pub.date_time.split('/').reverse().join('-')),
+            }));
+            setPublications(parsedData);
+         });
+   }, []);
+
+   const newestPublications = publications.sort((a, b) => b.date_time - a.date_time).slice(0, 3);
+
    const settings = {
       dots: true, // Hiển thị chấm tròn chỉ định slide hiện tại
       infinite: true, // Vòng lặp vô hạn
@@ -129,7 +146,9 @@ function Home() {
                   {hlNews.map((item) => (
                      <Link to={`/news/${item.id}`} key={item.id}>
                         <div className={cx('news-high')}>
-                           <img className={cx('news-img')} src={item.image} alt={item.title} />
+                           <div className={cx('img-body')}>
+                              <img className={cx('news-img')} src={item.image} alt={item.title} />
+                           </div>
                            <h5 className={cx('news-tl')}>{item.title}</h5>
                            <p className={cx('news-content')}>{item.content}</p>
                         </div>
@@ -170,41 +189,20 @@ function Home() {
          <div className={cx('container')}>
             <div className={cx('publications-body')}>
                <div className={cx('about-tl')}>{t('publications')}</div>
-               <div className={cx('pub-item')}>
-                  <div className={cx('pub-tl')}>
-                     2024<br></br>
-                     ISI/SCOPUS JOURNALS/BOOK CHAPTERS
-                  </div>
-                  <div className={cx('pub-content')}>
-                     2. Mirdula K, Chandrakumar T, Mohd Asif Shah, Duc-Tan Tran, NR Physical Layer, Machine Learning for
-                     Mobile Communications, 1st Edition, CRC Press, 17 pages, ISBN 9781003306290, 2024 .<br></br>
-                     1. Pham, Q. T., Pham, D. D., Can, K. L., To, H. D., & Vu, H. D. (2024). Vehicle Type Classification
-                     with Small Dataset and Transfer Learning Techniques. EAI Endorsed Transactions on Industrial
-                     Networks and Intelligent Systems, 11(2), e2-e2. 
-                  </div>
-               </div>
-               <div className={cx('pub-item')}>
-                  <div className={cx('pub-tl')}>
-                     2023<br></br>
-                     ISI/SCOPUS JOURNALS/BOOK CHAPTERS
-                  </div>
-                  <div className={cx('pub-content')}>
-                     9. Tran Duc Tan, Tran Duc Nghia, Nguyen Quang Huy, The system monitors and classifies user
-                     activities using a three-axis acceleration sensor combined with a carried smartphone, Nov. 2023.
-                     This "useful solution" has been certificated by the Intellectual Property Department, Ministry of
-                     Science and Technology, No.3417. <br></br>
-                     8. Duc-Tan Tran, Ha, N. T. T., Hai, L. Q., Tran, D. N., & Shankar, A. (2023). Shear complex modulus
-                     imaging utilizing frequency combination in the least mean square/algebraic Helmholtz
-                     inversion. Multimedia Tools and Applications,
-                     1-18, https://doi.org/10.1007/s11042-023-17061-7 , [Q1,R2] <br></br>
-                     7. Nhung Tran Thi Hong, Giang L. Nguyen, Nguyen Quang Huy, Do Viet Manh, Duc-Nghia Tran, Duc-Tan
-                     Tran, A Low-cost Real-time IoT Human Activity Recognition System Based on Wearable Sensor and the
-                     Supervised Learning Algorithms, Measurement, 2023, 113231, ISSN 0263-2241, Vol. 218, August 2023,
-                     113231, [Q1,R7]<br></br>
-                     6. Van, N. H., Van Thanh, P., Tran, D. N., Duc-Tan Tran* (2023). A new model of air quality
-                     prediction using lightweight machine learning. International Journal of Environmental Science and
-                     Technology, 20(3), 2983-2994. [Q1,R2]
-                  </div>
+               <div className={cx('pub-list')}>
+                  {newestPublications.map((pub) => (
+                     <a
+                        href={pub.link_pub}
+                        key={pub.id}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={cx('pub-item')}
+                     >
+                        <div className={cx('pub-date')}>{pub.originalDate}</div>
+                        <div className={cx('pub-tl')}>{pub.title}</div>
+                        <div className={cx('pub-content')}>{pub.author}</div>
+                     </a>
+                  ))}
                </div>
             </div>
          </div>
