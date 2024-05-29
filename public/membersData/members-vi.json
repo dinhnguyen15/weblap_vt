@@ -2,13 +2,13 @@
    {
       "id": 1,
       "name": "PGS.TS Hoàng Trọng Minh",
-      "position": "Head of ICN Lab; Senior IEEE",
-      "description": "Trưởng bộ môn ... Khoa Viễn thông 1 - Học viện Công nghệ Bưu chính Viễn thông",
+      "position": "Trưởng Lab; Senior IEEE",
+      "description": "Khoa Viễn thông 1 - Học viện Công nghệ Bưu chính Viễn thông, Hà Nội, Việt Nam",
       "email": "hoangtrongminh@ptit.edu.vn",
       "hIndex": 8,
-      "citations": "> 196 citations",
+      "citations": "> 196 trích dẫn",
       "papers": "",
-      "researchAreas": "Research Field:",
+      "researchAreas": "Lĩnh vực nghiên cứu: Wireless network, performance, security, optimization",
       "image": "/web-lab-vt/images/members/htm2.png",
       "links": [
          { "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=j_I0HGMAAAAJ&hl=en" },
@@ -18,239 +18,186 @@
    {
       "id": 2,
       "name": "PGS.TS Trần Trung Duy",
-      "position": "Deputy Head of ICN Lab",
-      "description": "Phòng Đào tạo và Khoa học công nghệ - Học viện Công nghệ Bưu chính Viễn thông",
+      "position": "Phó trưởng Lab",
+      "description": "Phòng Đào tạo và Khoa học công nghệ - Học viện Công nghệ Bưu chính Viễn thông, Hà Nội, Việt Nam",
       "email": "trantrungduy@ptithcm.edu.vn",
-      "hIndex": 21,
-      "citations": "> 1400 citations",
-      "papers": "> 50",
-      "researchAreas": "Lĩnh vực nghiên cứu",
+      "hIndex": 24,
+      "citations": "> 2000 trích dẫn",
+      "papers": "",
+      "researchAreas": "Lĩnh vực nghiên cứu: Cooperative Communication, Cognitive Radio, Physical-Layer Security, Hardware Impairments, Fountain Codes",
       "image": "/web-lab-vt/images/members/ttd.jpg",
-      "links": [
-         { "label": "Google Scholar", "url": "#" },
-         { "label": "Researchgate", "url": "#" },
-         { "label": "Orcid", "url": "#" }
-      ]
+      "links": [{ "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=9sVDBIoAAAAJ&hl=en" }]
    },
    {
       "id": 3,
       "name": "TS Nguyễn Việt Hưng",
-      "position": "Researcher/ main member",
-      "description": "Khoa Viễn thông 1 - Học viện Công nghệ Bưu chính Viễn thông",
+      "position": "Nhà nghiên cứu/ Thành viên chính",
+      "description": "Khoa Viễn thông 1 - Học viện Công nghệ Bưu chính Viễn thông, Hà Nội, Việt Nam",
       "email": "nvhung_vt1@ptit.edu.vn",
-      "hIndex": 21,
-      "citations": "> 1400 citations",
-      "papers": "> 50",
-      "researchAreas": "Lĩnh vực nghiên cứu",
+      "hIndex": 7,
+      "citations": "> 298 trích dẫn",
+      "papers": "",
+      "researchAreas": "Lĩnh vực nghiên cứu: Antenna, EM, RF",
       "image": "/web-lab-vt/images/members/nvh.jpg",
-      "links": [
-         { "label": "Google Scholar", "url": "#" },
-         { "label": "Researchgate", "url": "#" },
-         { "label": "Orcid", "url": "#" }
-      ]
+      "links": [{ "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=PIWe47UAAAAJ&hl=en" }]
    },
    {
       "id": 4,
       "name": "GS.TS Lê Bảo Long",
-      "position": "Science Advisor",
-      "description": "INRS Uni, Canada",
+      "position": "Cố vấn khoa học",
+      "description": "Viện nghiên cứu Khoa học Quốc gia, Đại học thành phố Quebec, Quebec, Canada",
       "email": "long.le@emt.inrs.ca",
-      "hIndex": 21,
-      "citations": "> 1400 citations",
-      "papers": "> 50",
-      "researchAreas": "Lĩnh vực nghiên cứu",
+      "hIndex": 57,
+      "citations": "> 13.600 trích dẫn",
+      "papers": "",
+      "researchAreas": "Lĩnh vực nghiên cứu: Wireless communications, wireless networking, cloud/edge computing, smart grids",
       "image": "/web-lab-vt/images/members/lbl.jpg",
-      "links": [
-         { "label": "Google Scholar", "url": "#" },
-         { "label": "Researchgate", "url": "#" },
-         { "label": "Orcid", "url": "#" }
-      ]
+      "links": [{ "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=-STl68rkz_kC&hl=en" }]
    },
    {
       "id": 5,
       "name": "Dr Takeshi Takahashi",
-      "position": "Collaborating Professor",
-      "description": "NICT Institute, Japan",
+      "position": "Giáo sư cộng tác",
+      "description": "Viện Công nghệ Thông tin và Truyền thông Quốc gia, Nhật Bản",
       "email": "takeshi_takahashi@nict.go.jp",
-      "hIndex": 21,
-      "citations": "> 1400 citations",
-      "papers": "> 50",
-      "researchAreas": "Lĩnh vực nghiên cứu",
+      "hIndex": 20,
+      "citations": "> 1476 trích dẫn",
+      "papers": "",
+      "researchAreas": "Lĩnh vực nghiên cứu: Cybersecurity, machine learning",
       "image": "/web-lab-vt/images/members/takeshi.jpg",
-      "links": [
-         { "label": "Google Scholar", "url": "#" },
-         { "label": "Researchgate", "url": "#" },
-         { "label": "Orcid", "url": "#" }
-      ]
+      "links": [{ "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=4AHBDgUAAAAJ&hl=en" }]
    },
    {
       "id": 6,
       "name": "PGS.TS Đào Như Ngọc",
-      "position": "Collaborating Professor, Senior member of IEEE; Member of ACM",
-      "description": "Sejong Uni, Korea",
+      "position": "Giáo sư cộng tác, Senior of IEEE; Thành viên ACM",
+      "description": "Đại học Sejong, Hàn Quốc",
       "email": "nndao@sejong.ac.kr",
-      "hIndex": 21,
-      "citations": "> 1400 citations",
-      "papers": "> 50",
-      "researchAreas": "Lĩnh vực nghiên cứu",
+      "hIndex": 26,
+      "citations": "> 2296 trích dẫn",
+      "papers": "",
+      "researchAreas": "Lĩnh vực nghiên cứu: Network Softwarization, Mobile Cloudification, Intelligent Systems, Intelligence of Things",
       "image": "/web-lab-vt/images/members/dnn.jpg",
-      "links": [
-         { "label": "Google Scholar", "url": "#" },
-         { "label": "Researchgate", "url": "#" },
-         { "label": "Orcid", "url": "#" }
-      ]
+      "links": [{ "label": "Google Scholar", "url": "https://scholar.google.co.kr/citations?user=rWmFrIgAAAAJ&hl=en" }]
    },
    {
       "id": 7,
       "name": "Dr Chalee Vorakulpipat",
-      "position": "Collaborating Professor",
-      "description": "NECTEC Ins, Thailand",
+      "position": "Giáo sư cộng tác",
+      "description": "Trung tâm Công nghệ Máy tính và Điện tử Quốc gia, Thái Lan",
       "email": "chalee.vorakulpipat@nectec.or.th",
-      "hIndex": 21,
-      "citations": "> 1400 citations",
-      "papers": "> 50",
-      "researchAreas": "Lĩnh vực nghiên cứu",
+      "hIndex": 12,
+      "citations": "> 1066 trích dẫn",
+      "papers": "",
+      "researchAreas": "Lĩnh vực nghiên cứu: Information Security, Digital Transformation, Knowledge Management",
       "image": "/web-lab-vt/images/members/chalee.jpg",
-      "links": [
-         { "label": "Google Scholar", "url": "#" },
-         { "label": "Researchgate", "url": "#" },
-         { "label": "Orcid", "url": "#" }
-      ]
+      "links": [{ "label": "Google Scholar", "url": "https://scholar.google.at/citations?user=_8Xsn84AAAAJ&hl=de" }]
    },
    {
       "id": 8,
       "name": "PGS.TS Nguyễn Nam Hoàng",
-      "position": "Collaborating Professor",
-      "description": "Đại học Công nghệ UET",
+      "position": "Giáo sư cộng tác",
+      "description": "Đại học Khoa học Tự nhiên, Đại học Quốc gia Hà Nội, Việt Nam",
       "email": "hoangnn@vnu.edu.vn",
-      "hIndex": 21,
-      "citations": "> 1400 citations",
-      "papers": "> 50",
-      "researchAreas": "Lĩnh vực nghiên cứu",
+      "hIndex": 18,
+      "citations": "> 1389 trích dẫn",
+      "papers": "",
+      "researchAreas": "Lĩnh vực nghiên cứu: Nanoscience and nanotechnology",
       "image": "/web-lab-vt/images/members/nnh.jpg",
-      "links": [
-         { "label": "Google Scholar", "url": "#" },
-         { "label": "Researchgate", "url": "#" },
-         { "label": "Orcid", "url": "#" }
-      ]
+      "links": [{ "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=zQG4UVsAAAAJ&hl=en" }]
    },
    {
       "id": 9,
       "name": "TS Nguyễn Trung Hiếu",
-      "position": "Collaborating Professor",
-      "description": "UNS Uni, Norway",
+      "position": "Giáo sư cộng tác",
+      "description": "Khoa Công nghệ, Khoa học Tự nhiên và Khoa học Hàng hải, Na Uy",
       "email": "Hieu.Nguyen@usn.no",
-      "hIndex": 21,
-      "citations": "> 1400 citations",
-      "papers": "> 50",
-      "researchAreas": "Lĩnh vực nghiên cứu",
+      "hIndex": "",
+      "citations": "> trích dẫn",
+      "papers": "",
+      "researchAreas": "Lĩnh vực nghiên cứu:",
       "image": "/web-lab-vt/images/members/nth.jpg",
-      "links": [
-         { "label": "Google Scholar", "url": "#" },
-         { "label": "Researchgate", "url": "#" },
-         { "label": "Orcid", "url": "#" }
-      ]
+      "links": [{ "label": "Researchgate", "url": "https://www.usn.no/kontakt-oss/tilsette/hieu-nguyen-1" }]
    },
    {
       "id": 10,
       "name": "TS Nguyễn Kim Quang",
-      "position": "Researcher/ member",
-      "description": "Phó Viện trưởng CDIT - Học viện Công nghệ Bưu chính Viễn thông",
+      "position": "Nhà nghiên cứu/ Thành viên",
+      "description": "Phó Viện trưởng CDIT - Học viện Công nghệ Bưu chính Viễn thông, Hà Nội, Việt Nam",
       "email": "quangnk@ptit.edu.vn",
-      "hIndex": 21,
-      "citations": "> 1400 citations",
-      "papers": "> 50",
-      "researchAreas": "Lĩnh vực nghiên cứu",
+      "hIndex": "",
+      "citations": "> trích dẫn",
+      "papers": "",
+      "researchAreas": "Lĩnh vực nghiên cứu:",
       "image": "/web-lab-vt/images/members/nkq.jpg",
-      "links": [
-         { "label": "Google Scholar", "url": "#" },
-         { "label": "Researchgate", "url": "#" },
-         { "label": "Orcid", "url": "#" }
-      ]
+      "links": [{ "label": "Google Scholar" }]
    },
    {
       "id": 11,
       "name": "TS Phạm Anh Thư",
-      "position": "Researcher/ member",
-      "description": "Khoa Viễn thông 1 - Học viện Công nghệ Bưu chính Viễn thông",
+      "position": "Nhà nghiên cứu/ Thành viên",
+      "description": "Khoa Viễn thông 1 - Học viện Công nghệ Bưu chính Viễn thông, Hà Nội, Việt Nam",
       "email": "thupa@ptit.edu.vn",
-      "hIndex": 21,
-      "citations": "> 1400 citations",
-      "papers": "> 50",
-      "researchAreas": "Lĩnh vực nghiên cứu",
+      "hIndex": 5,
+      "citations": "> 51 trích dẫn",
+      "papers": "",
+      "researchAreas": "Lĩnh vực nghiên cứu: Networking, security, RoF",
       "image": "/web-lab-vt/images/members/pat.jpg",
-      "links": [
-         { "label": "Google Scholar", "url": "#" },
-         { "label": "Researchgate", "url": "#" },
-         { "label": "Orcid", "url": "#" }
-      ]
+      "links": [{ "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=qYx8A68AAAAJ&hl=en" }]
    },
    {
       "id": 12,
       "name": "ThS Nguyễn Thanh Trà",
-      "position": "Researcher/ member",
-      "description": "Khoa Viễn thông 1 - Học viện Công nghệ Bưu chính Viễn thông",
+      "position": "Nhà nghiên cứu/ Thành viên",
+      "description": "Khoa Viễn thông 1 - Học viện Công nghệ Bưu chính Viễn thông, Hà Nội, Việt Nam",
       "email": "trant@ptit.edu.vn",
-      "hIndex": 21,
-      "citations": "> 1400 citations",
-      "papers": "> 50",
-      "researchAreas": "Lĩnh vực nghiên cứu",
+      "hIndex": "",
+      "citations": "> trích dẫn",
+      "papers": "",
+      "researchAreas": "Lĩnh vực nghiên cứu: Networking, security, Wireless Network.",
       "image": "/web-lab-vt/images/members/ntt.jpg",
-      "links": [
-         { "label": "Google Scholar", "url": "#" },
-         { "label": "Researchgate", "url": "#" },
-         { "label": "Orcid", "url": "#" }
-      ]
+      "links": [{ "label": "Google Scholar" }]
    },
    {
       "id": 13,
       "name": "ThS Trần Huy Long",
-      "position": "Researcher/ member",
-      "description": "Khoa Viễn thông 1 - Học viện Công nghệ Bưu chính Viễn thông",
+      "position": "Nhà nghiên cứu/ Thành viên",
+      "description": "Khoa Viễn thông 1 - Học viện Công nghệ Bưu chính Viễn thông, Hà Nội, Việt Nam",
       "email": "longth@ptit.edu.vn",
-      "hIndex": 21,
-      "citations": "> 1400 citations",
-      "papers": "> 50",
-      "researchAreas": "Lĩnh vực nghiên cứu",
+      "hIndex": "",
+      "citations": "> trích dẫn",
+      "papers": "",
+      "researchAreas": "Lĩnh vực nghiên cứu: WSN, IoT, Security",
       "image": "/web-lab-vt/images/members/thl.jpg",
       "links": [
-         { "label": "Google Scholar", "url": "#" },
-         { "label": "Researchgate", "url": "#" },
-         { "label": "Orcid", "url": "#" }
+         { "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=50nLxUoAAAAJ&hl=en" },
+         { "label": "Orcid", "url": "https://orcid.org/0009-0008-2968-3905" }
       ]
    },
    {
       "id": 14,
       "name": "TS Đỗ Trung Anh",
-      "position": "Researcher/ member",
-      "description": "Phòng QLKHCN&HTQT - Học viện Công nghệ Bưu chính Viễn thông",
+      "position": "Nhà nghiên cứu/ Thành viên",
+      "description": "Phòng QLKHCN & HTQT - Học viện Công nghệ Bưu chính Viễn thông, Hà Nội, Việt Nam",
       "email": "anhdt@ptit.edu.vn",
-      "hIndex": 21,
-      "citations": "> 1400 citations",
-      "papers": "> 50",
-      "researchAreas": "Lĩnh vực nghiên cứu",
+      "hIndex": "",
+      "citations": "> trích dẫn",
+      "papers": "",
+      "researchAreas": "Lĩnh vực nghiên cứu:",
       "image": "/web-lab-vt/images/members/dta.jpg",
-      "links": [
-         { "label": "Google Scholar", "url": "#" },
-         { "label": "Researchgate", "url": "#" },
-         { "label": "Orcid", "url": "#" }
-      ]
+      "links": [{ "label": "Researchgate", "url": "https://sites.google.com/site/dotrunganh86" }]
    },
    {
       "id": 15,
       "name": "TS Lê Văn Ngọc",
-      "position": "Researcher/ member",
-      "description": "Khoa cơ bản 1 - Học viện Công nghệ Bưu chính Viễn thông",
+      "position": "Nhà nghiên cứu/ Thành viên",
+      "description": "Khoa cơ bản 1 - Học viện Công nghệ Bưu chính Viễn thông, Hà Nội, Việt Nam",
       "email": "ngoclv@ptit.edu.vn",
-      "hIndex": 21,
-      "citations": "> 1400 citations",
-      "papers": "> 50",
-      "researchAreas": "Lĩnh vực nghiên cứu",
+      "hIndex": 3,
+      "citations": "> 19 trích dẫn",
+      "papers": "",
+      "researchAreas": "Lĩnh vực nghiên cứu: Differential equations, optimization theory",
       "image": "/web-lab-vt/images/members/lvn.jpg",
-      "links": [
-         { "label": "Google Scholar", "url": "#" },
-         { "label": "Researchgate", "url": "#" },
-         { "label": "Orcid", "url": "#" }
-      ]
+      "links": [{ "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=x60ioSAAAAAJ&hl=vi" }]
    }
 ]
