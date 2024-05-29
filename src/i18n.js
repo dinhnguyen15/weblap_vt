@@ -8,25 +8,20 @@ i18n
    .use(LanguageDetector)
    .use(initReactI18next)
    .init({
-      fallbackLng: 'en',
+      fallbackLng: 'en', // Đảm bảo tiếng Anh là ngôn ngữ mặc định
+      supportedLngs: ['en', 'vi'],
+      load: 'languageOnly', // Chỉ tải ngôn ngữ không kèm theo vùng miền (e.g., 'en' thay vì 'en-US')
       debug: true,
       interpolation: {
-         escapeValue: false, // not needed for react as it escapes by default
+         escapeValue: false, // Not needed for react as it escapes by default
       },
       backend: {
-         loadPath: '/web-lab-vt/locales/{{lng}}.json', // Chỉnh lại đường dẫn tới tệp JSON
+         loadPath: '/web-lab-vt/locales/{{lng}}.json',
       },
       detection: {
-         order: ['localStorage', 'cookie', 'navigator', 'htmlTag', 'path', 'subdomain'],
-         caches: ['localStorage', 'cookie'],
-         lookupLocalStorage: 'i18nextLng',
-         lookupCookie: 'i18nextLng',
-         cookieMinutes: 10,
-         cookieDomain: 'myDomain',
-         htmlTag: document.documentElement,
-         checkWhitelist: true,
+         order: ['querystring', 'cookie', 'localStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],
+         caches: ['cookie', 'localStorage'],
       },
-      whitelist: ['en', 'vi'],
    });
 
 export default i18n;

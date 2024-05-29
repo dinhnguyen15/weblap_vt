@@ -14,7 +14,32 @@ function Header() {
    const location = useLocation();
    const linksRef = useRef([]);
    const { t, i18n } = useTranslation();
-   const [language, setLanguage] = useState(i18n.language || 'en'); // Set default language to 'en'
+   const [language, setLanguage] = useState(() => {
+      const storedLanguage = localStorage.getItem('i18nextLng') || 'en';
+      return storedLanguage;
+   });
+
+   const changeLanguage = (lng) => {
+      i18n.changeLanguage(lng);
+      localStorage.setItem('i18nextLng', lng); // Lưu ngôn ngữ đã chọn vào localStorage
+   };
+
+   useEffect(() => {
+      const handleLanguageChange = (lng) => {
+         setLanguage(lng);
+      };
+
+      i18n.on('languageChanged', handleLanguageChange);
+
+      // Thiết lập ngôn ngữ mặc định nếu không có ngôn ngữ nào được lưu
+      if (!localStorage.getItem('i18nextLng')) {
+         i18n.changeLanguage('en');
+      }
+
+      return () => {
+         i18n.off('languageChanged', handleLanguageChange);
+      };
+   }, [i18n]);
 
    useEffect(() => {
       const updateLineStyle = () => {
@@ -37,27 +62,12 @@ function Header() {
       };
    }, [location]);
 
-   useEffect(() => {
-      const handleLanguageChange = (lng) => {
-         setLanguage(lng);
-      };
-
-      i18n.on('languageChanged', handleLanguageChange);
-
-      return () => {
-         i18n.off('languageChanged', handleLanguageChange);
-      };
-   }, [i18n]);
-
    const toggleNavbar = () => {
       setIsOpen(!isOpen);
    };
    const handleMenuClick = (to) => {
       localStorage.setItem('activeLink', to);
       setIsOpen(false); // Đóng navbarLinks sau khi chọn menu
-   };
-   const changeLanguage = (lng) => {
-      i18n.changeLanguage(lng);
    };
 
    return (

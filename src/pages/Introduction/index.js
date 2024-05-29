@@ -1,14 +1,16 @@
+import { useTranslation } from 'react-i18next';
 import styles from './Introduction.module.scss';
 import classNames from 'classnames/bind';
 
 const cx = classNames.bind(styles);
 
 function Introduction() {
+   const { t } = useTranslation();
    return (
       <div className={cx('wrapper')}>
          <div className={cx('page-head')}>
             <div className={cx('page-tl')}>ICN Lab</div>
-            <div className={cx('page-des')}>Lab Mạng kết nối thông minh</div>
+            <div className={cx('page-des')}>{t('lab_name')}</div>
          </div>
          <div className={cx('container')}>
             <div className={cx('body-intro')}>
