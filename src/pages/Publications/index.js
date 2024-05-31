@@ -62,6 +62,7 @@ function Publications() {
                      </option>
                   </select>
                </div>
+
                <div className={cx('research-list')}>
                   {sortedPublications.map((pub) => (
                      <a

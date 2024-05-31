@@ -20,30 +20,22 @@
    gap: 30px;
    flex-wrap: wrap;
    margin: 20px 0;
+   align-items: center;
 }
 
 .about-img {
    width: 650px;
-}
-
-.item-img1 {
-   width: 400px;
-   height: 220px;
+   height: 450px;
    border-radius: 5px;
-   box-shadow: 0px 1px 4px 2px rgb(0 0 0 / 12%);
-   background-color: var(--primary);
+   background-color: #ffffff;
+   // box-shadow: 0px 1px 4px 2px rgb(0 0 0 / 12%);
 }
 
 .item-img2 {
-   width: 550px;
-   height: 340px;
-   border-radius: 5px;
-   box-shadow: 0px 1px 4px 2px rgb(0 0 0 / 12%);
-   background-color: #f1f1f1;
-   position: relative;
-   z-index: -1;
-   margin-top: -130px;
-   margin-left: 45px;
+   width: 650px;
+   height: 450px;
+   object-fit: contain;
+   cursor: pointer;
 }
 
 .about-info {
@@ -188,7 +180,7 @@
 }
 
 .members-slide {
-   max-width: 67%;
+   max-width: 1000px;
 }
 
 .members-bg {
@@ -205,6 +197,8 @@
    width: 97%;
    position: relative;
    z-index: 1;
+   left: 50%;
+   transform: translate(-50%, 0px);
 }
 
 .members-item {
@@ -302,22 +296,44 @@
    text-align: justify;
 }
 
+@media (min-width: 1500px) {
+   .members-intro {
+      width: 28%;
+   }
+}
+
+@media (max-width: 1380px) {
+   .members-body {
+      justify-content: center;
+   }
+   .members-intro {
+      width: 95vw;
+      margin: 0px 50px;
+   }
+}
+
+@media (max-width: 992px) {
+   .members-slide {
+      max-width: 95vw;
+   }
+}
+
 @media (max-width: 650px) {
    .about-img {
       width: 350px;
-   }
-   .item-img1 {
-      width: 220px;
-      height: 130px;
+      height: 250px;
    }
    .item-img2 {
-      width: 300px;
-      height: 180px;
-      margin-top: -80px;
-      margin-left: 30px;
+      width: 350px;
+      height: 250px;
    }
    .news-body-right {
       width: 350px;
+   }
+   .img-body {
+      width: 350px;
+      height: 250px;
+      margin: 0;
    }
    .news-img {
       width: 350px;
@@ -329,6 +345,10 @@
    .news-content {
       width: 350px;
       padding: 10px 0px 0px 0px;
+   }
+
+   .members-intro {
+      margin: 0px 0px;
    }
    .publications-body {
       margin: 30px 0px;

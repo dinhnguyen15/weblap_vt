@@ -80,6 +80,20 @@ function Home() {
 
    const newestPublications = publications.sort((a, b) => b.date_time - a.date_time).slice(0, 3);
 
+   const sliderHome = {
+      dots: false, // Hiển thị chấm tròn chỉ định slide hiện tại
+      infinite: true, // Vòng lặp vô hạn
+      speed: 1000, // Tốc độ chuyển slide (ms)
+      slidesToShow: 1, // Số lượng slide hiển thị cùng lúc
+      slidesToScroll: 1, // Số lượng slide cuộn khi chuyển
+      autoplay: true, // Tự động chạy
+      autoplaySpeed: 2500, // Thời gian chờ giữa các slide (ms)
+      fade: true, // Hiệu ứng fade
+      cssEase: 'linear', // Kiểu chuyển đổi
+      prevArrow: <CustomArrow />,
+      nextArrow: <CustomArrow />,
+   };
+
    const settings = {
       dots: true, // Hiển thị chấm tròn chỉ định slide hiện tại
       infinite: true, // Vòng lặp vô hạn
@@ -92,7 +106,7 @@ function Home() {
       nextArrow: <CustomArrow />,
       responsive: [
          {
-            breakpoint: 1024,
+            breakpoint: 990,
             settings: {
                slidesToShow: 2,
                slidesToScroll: 1,
@@ -103,6 +117,7 @@ function Home() {
          {
             breakpoint: 650,
             settings: {
+               dots: false,
                slidesToShow: 1,
                slidesToScroll: 1,
             },
@@ -117,8 +132,18 @@ function Home() {
          <div className={cx('container')}>
             <div className={cx('about-body')}>
                <div className={cx('about-img')}>
-                  <div className={cx('item-img1')}></div>
-                  <div className={cx('item-img2')}></div>
+                  <Slider {...sliderHome}>
+                     <img
+                        className={cx('item-img2')}
+                        src={'/web-lab-vt/images/bg-lab-home-s1.jpg'}
+                        alt={'Emerging security technology'}
+                     />
+                     <img
+                        className={cx('item-img2')}
+                        src={'/web-lab-vt/images/bg-lab-home-s2.jpg'}
+                        alt={'Data-driven cybersecurity technology'}
+                     />
+                  </Slider>
                </div>
                <div className={cx('about-info')}>
                   <div className={cx('about-tl')}>{t('about_us')}</div>
