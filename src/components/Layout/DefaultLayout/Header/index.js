@@ -95,14 +95,14 @@ function Header() {
                   >
                      {t('news')}
                   </NavLink>
-                  <NavLink
+                  {/* <NavLink
                      to="/introduction"
                      className={({ isActive }) => cx('menu-item', { active: isActive })}
                      ref={(el) => (linksRef.current[2] = el)}
                      onClick={() => handleMenuClick('/introduction')}
                   >
                      {t('introduction')}
-                  </NavLink>
+                  </NavLink> */}
                   <NavLink
                      to="/members"
                      className={({ isActive }) => cx('menu-item', { active: isActive })}

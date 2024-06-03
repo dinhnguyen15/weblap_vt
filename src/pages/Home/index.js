@@ -186,10 +186,7 @@ function Home() {
          <div className={cx('members-body')}>
             <div className={cx('members-intro')}>
                <div className={cx('about-tl')}>{t('members')}</div>
-               <div className={cx('members-content')}>
-                  Welcome to SSA laboratory. Our research delivers impact across the whole spectrum of communications,
-                  algorithms, and signal processing, ...
-               </div>
+               <div className={cx('members-content')}>{t('members_des')}</div>
             </div>
             <div className={cx('members-slide')}>
                <div className={cx('members-bg')}></div>
@@ -213,7 +210,7 @@ function Home() {
 
          <div className={cx('container')}>
             <div className={cx('publications-body')}>
-               <div className={cx('about-tl')}>{t('publications')}</div>
+               <div className={cx('about-tl')}>{t('re_publications')}</div>
                <div className={cx('pub-list')}>
                   {newestPublications.map((pub) => (
                      <a

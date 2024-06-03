@@ -1,7 +1,6 @@
 import CallForPapers from '~/pages/CallForPapers';
 import Contact from '~/pages/Contact';
 import Home from '~/pages/Home';
-import Introduction from '~/pages/Introduction';
 import Members from '~/pages/Members';
 import News from '~/pages/News';
 import NewsSubpage from '~/pages/NewsSubpage';
@@ -12,7 +11,6 @@ const publicRoutes = [
    { path: '/', component: Home },
    { path: '/news', component: News },
    { path: '/news/:id', component: NewsSubpage },
-   { path: '/introduction', component: Introduction },
    { path: '/members', component: Members },
    { path: '/publications', component: Publications },
    { path: '/callforpapers', component: CallForPapers },
