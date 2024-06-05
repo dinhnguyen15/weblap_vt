@@ -10,6 +10,7 @@
    gap: 25px;
    justify-content: right;
    align-items: center;
+   margin: 30px 0px 10px 0px;
 }
 
 .filter-research {
@@ -17,7 +18,6 @@
    flex-direction: row;
    align-items: center;
    gap: 10px;
-   margin: 30px 0px 10px 0px;
 }
 
 .filter-tl {
@@ -47,7 +47,6 @@
    flex-direction: row;
    align-items: center;
    gap: 10px;
-   margin: 30px 0px 10px 0px;
 }
 
 .items-per-page-tl {
@@ -171,5 +170,14 @@
 @media (max-width: 1250px) {
    .research-item {
       margin: 0 20px;
+   }
+   .filter-ipp {
+      margin-right: 20px;
+   }
+}
+
+@media (max-width: 450px) {
+   .filter-ipp {
+      gap: 15px;
    }
 }
