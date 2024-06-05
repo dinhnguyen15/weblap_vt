@@ -41,7 +41,11 @@ function Contact() {
                         </div>
                      </div>
                   </div>
-                  <div className={cx('intro-head-right')}></div>
+                  <img
+                     className={cx('intro-head-right')}
+                     src={'/web-lab-vt/images/bg-lab-home-s2.jpg'}
+                     alt={'Data-driven cybersecurity technology'}
+                  />
                </div>
                <div className={cx('intro-content')}>
                   <div dangerouslySetInnerHTML={{ __html: t('content_contact') }} />

@@ -3,13 +3,21 @@
    margin: 0 auto;
 }
 
+.filter-ipp {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   gap: 25px;
+   justify-content: right;
+   align-items: center;
+}
+
 .filter-research {
    display: flex;
    flex-direction: row;
    align-items: center;
    gap: 10px;
    margin: 30px 0px 10px 0px;
-   justify-content: right;
 }
 
 .filter-tl {
@@ -34,12 +42,42 @@
    }
 }
 
+.items-per-page {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 10px;
+   margin: 30px 0px 10px 0px;
+}
+
+.items-per-page-tl {
+   font-family: Roboto;
+   font-size: 18px;
+   color: var(--color-menu);
+}
+
+.items-per-page-name {
+   font-family: Roboto-Bold;
+   background-color: var(--color-title);
+   border-radius: 5px;
+   box-shadow: 0px 3px 4px 1px rgb(0 0 0 / 15%);
+   border: none;
+   color: #ffffff;
+   font-size: 18px;
+   padding: 8px 10px;
+   cursor: pointer;
+
+   &:focus-visible {
+      outline: none;
+   }
+}
+
 .research-list {
    display: flex;
    flex-direction: column;
    gap: 15px;
    margin-top: 15px;
-   margin-bottom: 50px;
+   margin-bottom: 30px;
 }
 
 .research-item {
@@ -80,6 +118,54 @@
    font-size: 18px;
    color: var(--color-text-2);
    font-style: italic;
+}
+
+.pagination {
+   display: flex;
+   flex-direction: row;
+   gap: 5px;
+   justify-content: center;
+   margin-bottom: 50px;
+}
+
+.page-button {
+   padding: 5px 12px;
+   font-size: 18px;
+   border: 1px solid transparent;
+   border-radius: 3px;
+   color: var(--color-text-3);
+   background-color: rgb(232, 232, 232);
+
+   &:not(:disabled):hover {
+      background-color: var(--color-title);
+   }
+}
+.page-button.active {
+   background-color: var(--color-title);
+   color: var(--color-text);
+}
+
+.first-button,
+.prev-button,
+.next-button,
+.last-button {
+   width: 35px;
+   height: auto;
+   font-size: 18px;
+   color: var(--color-text-3);
+   border-radius: 3px;
+   border: 1px solid transparent;
+   background-color: rgb(232, 232, 232);
+
+   &:not(:disabled):hover {
+      background-color: var(--color-title);
+   }
+
+   &:disabled {
+      cursor: not-allowed;
+
+      color: var(--color-text-2);
+   }
 }
 
 @media (max-width: 1250px) {
