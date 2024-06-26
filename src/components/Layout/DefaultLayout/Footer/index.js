@@ -11,11 +11,9 @@ function Footer() {
          <div className={cx('container')}>
             <div className={cx('footer-tl')}>{t('lab_name')}</div>
             <ul className={cx('footer-content')}>
-               <li>{t('lab_address')}</li>
-               <li>{t('organization_lab')}</li>
-               <li>{t('organization_ptit')}</li>
-               <li>{t('address')}</li>
+               <li>{t('address_footer')}</li>
                <li>{t('phone_fax')}</li>
+               <li>{t('email')}</li>
                <li>{t('website')}</li>
             </ul>
          </div>
