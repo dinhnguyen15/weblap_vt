@@ -3,21 +3,16 @@ import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const cx = classNames.bind(styles);
 
 function Header() {
    const [isOpen, setIsOpen] = useState(false);
-   const [lineStyle, setLineStyle] = useState({});
-   const location = useLocation();
    const linksRef = useRef([]);
    const { t, i18n } = useTranslation();
-   const [language, setLanguage] = useState(() => {
-      const storedLanguage = localStorage.getItem('i18nextLng') || 'en';
-      return storedLanguage;
-   });
+   const [language, setLanguage] = useState('en');
 
    const changeLanguage = (lng) => {
       i18n.changeLanguage(lng);
@@ -25,42 +20,21 @@ function Header() {
    };
 
    useEffect(() => {
+      // Đặt ngôn ngữ mặc định là 'en' mỗi khi component được tải
+      i18n.changeLanguage('en');
+      localStorage.setItem('i18nextLng', 'en');
+      setLanguage('en');
+
       const handleLanguageChange = (lng) => {
          setLanguage(lng);
       };
 
       i18n.on('languageChanged', handleLanguageChange);
 
-      // Thiết lập ngôn ngữ mặc định nếu không có ngôn ngữ nào được lưu
-      if (!localStorage.getItem('i18nextLng')) {
-         i18n.changeLanguage('en');
-      }
-
       return () => {
          i18n.off('languageChanged', handleLanguageChange);
       };
    }, [i18n]);
-
-   useEffect(() => {
-      const updateLineStyle = () => {
-         const activeLink = linksRef.current.find((link) => link && link.classList.contains(cx('active')));
-         if (activeLink) {
-            const { offsetLeft, offsetWidth } = activeLink;
-            setLineStyle({
-               left: offsetLeft,
-               width: offsetWidth,
-            });
-         }
-      };
-
-      updateLineStyle();
-
-      window.addEventListener('resize', updateLineStyle);
-
-      return () => {
-         window.removeEventListener('resize', updateLineStyle);
-      };
-   }, [location]);
 
    const toggleNavbar = () => {
       setIsOpen(!isOpen);
@@ -75,10 +49,9 @@ function Header() {
          <div className={cx('inner')}>
             <nav className={cx('navbar')}>
                <NavLink to="/" className={cx('navbarLogo')}>
-                  <img src={'/web-lab-vt/images/logo-labvt.jpg'} alt={'logo'} />
+                  <img src={'/images/logo-labvt.jpg'} alt={'logo'} />
                </NavLink>
                <div className={cx('navbarLinks', { open: isOpen })}>
-                  <div className={cx('line')} style={lineStyle}></div>
                   <NavLink
                      to="/"
                      className={({ isActive }) => cx('menu-item', { active: isActive })}
@@ -86,6 +59,7 @@ function Header() {
                      onClick={() => handleMenuClick('/')}
                   >
                      {t('home')}
+                     <div className={cx('line')}></div>
                   </NavLink>
                   <NavLink
                      to="/news"
@@ -94,6 +68,7 @@ function Header() {
                      onClick={() => handleMenuClick('/news')}
                   >
                      {t('news')}
+                     <div className={cx('line')}></div>
                   </NavLink>
                   {/* <NavLink
                      to="/introduction"
@@ -102,6 +77,7 @@ function Header() {
                      onClick={() => handleMenuClick('/introduction')}
                   >
                      {t('introduction')}
+                     <div className={cx('line')}></div>
                   </NavLink> */}
                   <NavLink
                      to="/members"
@@ -110,6 +86,7 @@ function Header() {
                      onClick={() => handleMenuClick('/members')}
                   >
                      {t('members')}
+                     <div className={cx('line')}></div>
                   </NavLink>
                   <NavLink
                      to="/publications"
@@ -118,6 +95,7 @@ function Header() {
                      onClick={() => handleMenuClick('/publications')}
                   >
                      {t('publications')}
+                     <div className={cx('line')}></div>
                   </NavLink>
                   <NavLink
                      to="/callforpapers"
@@ -126,14 +104,16 @@ function Header() {
                      onClick={() => handleMenuClick('/callforpapers')}
                   >
                      {t('call_for_papers')}
+                     <div className={cx('line')}></div>
                   </NavLink>
                   <NavLink
-                     to="/others"
+                     to="/projects"
                      className={({ isActive }) => cx('menu-item', { active: isActive })}
                      ref={(el) => (linksRef.current[6] = el)}
-                     onClick={() => handleMenuClick('/others')}
+                     onClick={() => handleMenuClick('/projects')}
                   >
-                     {t('others')}
+                     {t('projects')}
+                     <div className={cx('line')}></div>
                   </NavLink>
                   <NavLink
                      to="/contact"
@@ -142,17 +122,14 @@ function Header() {
                      onClick={() => handleMenuClick('/contact')}
                   >
                      {t('contact_us')}
+                     <div className={cx('line')}></div>
                   </NavLink>
                   <div className={cx('languageSwitcher')}>
-                     <button onClick={() => changeLanguage(language === 'en' ? 'vi' : 'en')}>
-                        {language === 'en' ? 'VI' : 'EN'}
+                     <button onClick={() => changeLanguage(language === 'vi' ? 'en' : 'vi')}>
+                        {language === 'vi' ? 'EN' : 'VI'}
                         <img
-                           src={
-                              language === 'en'
-                                 ? '/web-lab-vt/images/vietnam-flag.png'
-                                 : '/web-lab-vt/images/uk-flag.png'
-                           }
-                           alt={language === 'en' ? 'Vietnamese' : 'English'}
+                           src={language === 'vi' ? '/images/uk-flag.png' : '/images/vietnam-flag.png'}
+                           alt={language === 'vi' ? 'English' : 'Vietnamese'}
                            className={cx('flagIcon')}
                         />
                      </button>

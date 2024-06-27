@@ -12,8 +12,7 @@ function Members() {
 
    useEffect(() => {
       const loadMembersData = (language) => {
-         const url =
-            language === 'en' ? '/web-lab-vt/membersData/members-en.json' : '/web-lab-vt/membersData/members-vi.json';
+         const url = language === 'en' ? '/membersData/members-en.json' : '/membersData/members-vi.json';
 
          fetch(url)
             .then((response) => response.json())
@@ -76,10 +75,10 @@ function Members() {
                                  <div className={cx('line-info')}></div>
                                  H-index: {member.hIndex}, {member.citations}
                               </li>
-                              <li className={cx('info-item')}>
+                              {/* <li className={cx('info-item')}>
                                  <div className={cx('line-info')}></div>
                                  ISI-Scopus papers: {member.papers}
-                              </li>
+                              </li> */}
                               <li className={cx('info-item')}>
                                  <div className={cx('line-info')}></div>
                                  <p className={cx('item-research')}>{member.researchAreas}</p>
@@ -89,12 +88,12 @@ function Members() {
                               {member.links.map((link, linkIndex) => (
                                  <div key={linkIndex}>
                                     <a
-                                       className={cx('re-btn')}
+                                       className={cx('res-btn')}
                                        href={link.url}
                                        target="_blank"
                                        rel="noopener noreferrer"
                                     >
-                                       {link.label}
+                                       <img src={link.image} alt={link.label} />
                                     </a>
                                  </div>
                               ))}

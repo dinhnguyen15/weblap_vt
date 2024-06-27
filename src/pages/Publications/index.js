@@ -12,10 +12,10 @@ function Publications() {
    const [publications, setPublications] = useState([]);
    const [filter, setFilter] = useState('1'); // 1: Newest, 2: Oldest
    const [currentPage, setCurrentPage] = useState(1);
-   const [itemsPerPage, setItemsPerPage] = useState(5);
+   const [itemsPerPage, setItemsPerPage] = useState(100);
 
    useEffect(() => {
-      fetch('/web-lab-vt/publicationsData/publications.json')
+      fetch('/publicationsData/publications.json')
          .then((response) => response.json())
          .then((data) => {
             const parsedData = data.map((pub) => ({

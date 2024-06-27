@@ -9,7 +9,7 @@ function NewsSubpage() {
    const [newsItem, setNewsItem] = useState(null);
 
    useEffect(() => {
-      fetch('/web-lab-vt/newsData/news.json')
+      fetch('/newsData/news.json')
          .then((response) => response.json())
          .then((data) => {
             const item = data.find((news) => news.id === parseInt(id, 10));

@@ -4,7 +4,7 @@ import Home from '~/pages/Home';
 import Members from '~/pages/Members';
 import News from '~/pages/News';
 import NewsSubpage from '~/pages/NewsSubpage';
-import Others from '~/pages/Others';
+import Projects from '~/pages/Projects';
 import Publications from '~/pages/Publications';
 
 const publicRoutes = [
@@ -14,7 +14,7 @@ const publicRoutes = [
    { path: '/members', component: Members },
    { path: '/publications', component: Publications },
    { path: '/callforpapers', component: CallForPapers },
-   { path: '/others', component: Others },
+   { path: '/projects', component: Projects },
    { path: '/contact', component: Contact },
 ];
 

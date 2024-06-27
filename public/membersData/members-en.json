@@ -9,10 +9,14 @@
       "citations": "> 196 citations",
       "papers": "",
       "researchAreas": "Research Field: Wireless network, performance, security, optimization",
-      "image": "/web-lab-vt/images/members/htm2.png",
+      "image": "/images/members/htm.jpg",
       "links": [
-         { "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=j_I0HGMAAAAJ&hl=en" },
-         { "label": "Orcid", "url": "https://orcid.org/0000-0001-8486-2940" }
+         {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?user=j_I0HGMAAAAJ&hl=en",
+            "image": "/images/icons/gg-scho.png"
+         },
+         { "label": "Orcid", "url": "https://orcid.org/0000-0001-8486-2940", "image": "/images/icons/orcid.png" }
       ]
    },
    {
@@ -25,8 +29,14 @@
       "citations": "> 2000 citations",
       "papers": "",
       "researchAreas": "Research Field: Cooperative Communication, Cognitive Radio, Physical-Layer Security, Hardware Impairments, Fountain Codes",
-      "image": "/web-lab-vt/images/members/ttd.jpg",
-      "links": [{ "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=9sVDBIoAAAAJ&hl=en" }]
+      "image": "/images/members/ttd.jpg",
+      "links": [
+         {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?user=9sVDBIoAAAAJ&hl=en",
+            "image": "/images/icons/gg-scho.png"
+         }
+      ]
    },
    {
       "id": 3,
@@ -38,8 +48,14 @@
       "citations": "> 298 citations",
       "papers": "",
       "researchAreas": "Research Field: Antenna, EM, RF",
-      "image": "/web-lab-vt/images/members/nvh.jpg",
-      "links": [{ "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=PIWe47UAAAAJ&hl=en" }]
+      "image": "/images/members/nvh.jpg",
+      "links": [
+         {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?user=PIWe47UAAAAJ&hl=en",
+            "image": "/images/icons/gg-scho.png"
+         }
+      ]
    },
    {
       "id": 4,
@@ -51,8 +67,14 @@
       "citations": "> 13.600 citations",
       "papers": "",
       "researchAreas": "Research Field: Wireless communications, wireless networking, cloud/edge computing, smart grids",
-      "image": "/web-lab-vt/images/members/lbl.jpg",
-      "links": [{ "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=-STl68rkz_kC&hl=en" }]
+      "image": "/images/members/lbl.jpg",
+      "links": [
+         {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?user=-STl68rkz_kC&hl=en",
+            "image": "/images/icons/gg-scho.png"
+         }
+      ]
    },
    {
       "id": 5,
@@ -64,8 +86,14 @@
       "citations": "> 1476 citations",
       "papers": "",
       "researchAreas": "Research Field: Cybersecurity, machine learning",
-      "image": "/web-lab-vt/images/members/takeshi.jpg",
-      "links": [{ "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=4AHBDgUAAAAJ&hl=en" }]
+      "image": "/images/members/takeshi.jpg",
+      "links": [
+         {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?user=4AHBDgUAAAAJ&hl=en",
+            "image": "/images/icons/gg-scho.png"
+         }
+      ]
    },
    {
       "id": 6,
@@ -77,8 +105,14 @@
       "citations": "> 2296 citations",
       "papers": "",
       "researchAreas": "Research Field: Network Softwarization, Mobile Cloudification, Intelligent Systems, Intelligence of Things",
-      "image": "/web-lab-vt/images/members/dnn.jpg",
-      "links": [{ "label": "Google Scholar", "url": "https://scholar.google.co.kr/citations?user=rWmFrIgAAAAJ&hl=en" }]
+      "image": "/images/members/dnn.jpg",
+      "links": [
+         {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.co.kr/citations?user=rWmFrIgAAAAJ&hl=en",
+            "image": "/images/icons/gg-scho.png"
+         }
+      ]
    },
    {
       "id": 7,
@@ -90,8 +124,14 @@
       "citations": "> 1066 citations",
       "papers": "",
       "researchAreas": "Research Field: Information Security, Digital Transformation, Knowledge Management",
-      "image": "/web-lab-vt/images/members/chalee.jpg",
-      "links": [{ "label": "Google Scholar", "url": "https://scholar.google.at/citations?user=_8Xsn84AAAAJ&hl=de" }]
+      "image": "/images/members/chalee.jpg",
+      "links": [
+         {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.at/citations?user=_8Xsn84AAAAJ&hl=de",
+            "image": "/images/icons/gg-scho.png"
+         }
+      ]
    },
    {
       "id": 8,
@@ -103,8 +143,14 @@
       "citations": "> 1389 citations",
       "papers": "",
       "researchAreas": "Research Field: Nanoscience and nanotechnology",
-      "image": "/web-lab-vt/images/members/nnh.jpg",
-      "links": [{ "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=zQG4UVsAAAAJ&hl=en" }]
+      "image": "/images/members/nnh.jpg",
+      "links": [
+         {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?user=zQG4UVsAAAAJ&hl=en",
+            "image": "/images/icons/gg-scho.png"
+         }
+      ]
    },
    {
       "id": 9,
@@ -116,8 +162,14 @@
       "citations": "> citations",
       "papers": "",
       "researchAreas": "Research Field:",
-      "image": "/web-lab-vt/images/members/nth.jpg",
-      "links": [{ "label": "Researchgate", "url": "https://www.usn.no/kontakt-oss/tilsette/hieu-nguyen-1" }]
+      "image": "/images/members/nth.jpg",
+      "links": [
+         {
+            "label": "Researchgate",
+            "url": "https://www.usn.no/kontakt-oss/tilsette/hieu-nguyen-1",
+            "image": "/images/icons/re-gate.png"
+         }
+      ]
    },
    {
       "id": 10,
@@ -129,8 +181,8 @@
       "citations": "> citations",
       "papers": "",
       "researchAreas": "Research Field:",
-      "image": "/web-lab-vt/images/members/nkq.jpg",
-      "links": [{ "label": "Google Scholar" }]
+      "image": "/images/members/nkq.jpg",
+      "links": [{ "label": "Google Scholar", "image": "/images/icons/gg-scho.png" }]
    },
    {
       "id": 11,
@@ -142,8 +194,14 @@
       "citations": "> 51 citations",
       "papers": "",
       "researchAreas": "Research Field: Networking, security, RoF",
-      "image": "/web-lab-vt/images/members/pat.jpg",
-      "links": [{ "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=qYx8A68AAAAJ&hl=en" }]
+      "image": "/images/members/pat.jpg",
+      "links": [
+         {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?user=qYx8A68AAAAJ&hl=en",
+            "image": "/images/icons/gg-scho.png"
+         }
+      ]
    },
    {
       "id": 12,
@@ -155,8 +213,8 @@
       "citations": "> citations",
       "papers": "",
       "researchAreas": "Research Field: Networking, security, Wireless Network.",
-      "image": "/web-lab-vt/images/members/ntt.jpg",
-      "links": [{ "label": "Google Scholar" }]
+      "image": "/images/members/ntt.jpg",
+      "links": [{ "label": "Google Scholar", "image": "/images/icons/gg-scho.png" }]
    },
    {
       "id": 13,
@@ -168,10 +226,14 @@
       "citations": "> citations",
       "papers": "",
       "researchAreas": "Research Field: WSN, IoT, Security",
-      "image": "/web-lab-vt/images/members/thl.jpg",
+      "image": "/images/members/thl.jpg",
       "links": [
-         { "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=50nLxUoAAAAJ&hl=en" },
-         { "label": "Orcid", "url": "https://orcid.org/0009-0008-2968-3905" }
+         {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?user=50nLxUoAAAAJ&hl=en",
+            "image": "/images/icons/gg-scho.png"
+         },
+         { "label": "Orcid", "url": "https://orcid.org/0009-0008-2968-3905", "image": "/images/icons/orcid.png" }
       ]
    },
    {
@@ -184,8 +246,14 @@
       "citations": "> citations",
       "papers": "",
       "researchAreas": "Research Field:",
-      "image": "/web-lab-vt/images/members/dta.jpg",
-      "links": [{ "label": "Researchgate", "url": "https://sites.google.com/site/dotrunganh86" }]
+      "image": "/images/members/dta.jpg",
+      "links": [
+         {
+            "label": "Researchgate",
+            "url": "https://sites.google.com/site/dotrunganh86",
+            "image": "/images/icons/re-gate.png"
+         }
+      ]
    },
    {
       "id": 15,
@@ -197,7 +265,13 @@
       "citations": "> 19 citations",
       "papers": "",
       "researchAreas": "Research Field: Differential equations, optimization theory",
-      "image": "/web-lab-vt/images/members/lvn.jpg",
-      "links": [{ "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=x60ioSAAAAAJ&hl=vi" }]
+      "image": "/images/members/lvn.jpg",
+      "links": [
+         {
+            "label": "Google Scholar",
+            "url": "https://scholar.google.com/citations?user=x60ioSAAAAAJ&hl=vi",
+            "image": "/images/icons/gg-scho.png"
+         }
+      ]
    }
 ]

@@ -52,7 +52,13 @@
    position: absolute;
    top: 35px;
    height: 3px;
+   width: -webkit-fill-available;
    background-color: var(--color-menu);
+   display: none;
+}
+
+.menu-item.active .line {
+   display: block;
    transition: all 0.2s ease;
 }
 
@@ -111,10 +117,6 @@
       align-items: center;
       box-shadow: 0px 1px 1px 1px rgb(0 0 0 / 12%);
       gap: 0;
-      display: none;
-   }
-
-   .line {
       display: none;
    }
 

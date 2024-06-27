@@ -16,7 +16,7 @@ i18n
          escapeValue: false, // Not needed for react as it escapes by default
       },
       backend: {
-         loadPath: '/web-lab-vt/locales/{{lng}}.json',
+         loadPath: '/locales/{{lng}}.json',
       },
       detection: {
          order: ['querystring', 'cookie', 'localStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],

@@ -11,7 +11,7 @@ function News() {
    const [news, setNews] = useState([]);
 
    useEffect(() => {
-      fetch('/web-lab-vt/newsData/news.json')
+      fetch('/newsData/news.json')
          .then((response) => response.json())
          .then((data) => setNews(data));
    }, []);

@@ -112,6 +112,11 @@
    }
 }
 
+.res-btn img {
+   width: auto;
+   height: 42px;
+}
+
 @media (max-width: 992px) {
    .members-item {
       gap: 20px;

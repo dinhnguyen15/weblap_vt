@@ -43,7 +43,7 @@ function Contact() {
                   </div>
                   <img
                      className={cx('intro-head-right')}
-                     src={'/web-lab-vt/images/bg-lab-home-s2.jpg'}
+                     src={'/images/bg-lab-home-s2.jpg'}
                      alt={'Data-driven cybersecurity technology'}
                   />
                </div>

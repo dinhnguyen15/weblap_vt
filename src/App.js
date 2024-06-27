@@ -5,7 +5,7 @@ import { Fragment } from 'react';
 
 function App() {
    return (
-      <Router basename="/web-lab-vt">
+      <Router>
          <div className="App">
             <Routes>
                {publicRoutes.map((route, index) => {

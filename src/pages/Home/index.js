@@ -18,7 +18,7 @@ function Home() {
    const [news, setNews] = useState([]);
 
    useEffect(() => {
-      const fetchNews = fetch('/web-lab-vt/newsData/news.json').then((response) => response.json());
+      const fetchNews = fetch('/newsData/news.json').then((response) => response.json());
 
       Promise.all([fetchNews])
          .then(([newsData]) => {
@@ -39,8 +39,7 @@ function Home() {
 
    useEffect(() => {
       const loadMembersData = (language) => {
-         const url =
-            language === 'en' ? '/web-lab-vt/membersData/members-en.json' : '/web-lab-vt/membersData/members-vi.json';
+         const url = language === 'en' ? '/membersData/members-en.json' : '/membersData/members-vi.json';
 
          fetch(url)
             .then((response) => response.json())
@@ -66,7 +65,7 @@ function Home() {
    const [publications, setPublications] = useState([]);
 
    useEffect(() => {
-      fetch('/web-lab-vt/publicationsData/publications.json')
+      fetch('/publicationsData/publications.json')
          .then((response) => response.json())
          .then((data) => {
             const parsedData = data.map((pub) => ({
@@ -135,12 +134,12 @@ function Home() {
                   <Slider {...sliderHome}>
                      <img
                         className={cx('item-img2')}
-                        src={'/web-lab-vt/images/bg-lab-home-s1.jpg'}
+                        src={'/images/bg-lab-home-s1.jpg'}
                         alt={'Emerging security technology'}
                      />
                      <img
                         className={cx('item-img2')}
-                        src={'/web-lab-vt/images/bg-lab-home-s2.jpg'}
+                        src={'/images/bg-lab-home-s2.jpg'}
                         alt={'Data-driven cybersecurity technology'}
                      />
                   </Slider>
